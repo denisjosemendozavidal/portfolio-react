@@ -10,7 +10,7 @@ const Experience = () => {
           <h3 className='experience-galery-RN-project-tittle'>React Native project</h3>
           <p>Used Tecnologies: React Native, expo go, among others</p>
           <p>Idea behind it: Sharing positive energy and motivation through a mobile app</p>
-          <p>Please click on the image bellow to be redirected to its Github repository, (link: "https://github.com/denisjosemendozavidal/React-native-first.git")</p>
+          <p>Please click on the image bellow to be redirected to its Github repository, link: "https://github.com/denisjosemendozavidal/React-native-first.git"</p>
           <a href="https://github.com/denisjosemendozavidal/React-native-first.git" target="_blank"><img src="/images/RN-first.gif" alt="" /></a>
         </div>
         <div className='experience-galery-RandM-project'>
