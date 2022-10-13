@@ -21,6 +21,8 @@ a {
     height: 100vh;
     background-color: var(--background-color);
     cursor: grabbing;
+    display: flex;
+    flex-wrap: wrap;
 }
 
     .home{
@@ -266,6 +268,21 @@ a {
     color: var(--colorForTittles);
 }
 
+    .experience-scroll-down-message {
+        color: var(--colorForHovers);
+        animation: beat 1s alternate infinite ease-in-out;
+    }
+
+        @keyframes beat {
+            0%{
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 100%;
+            }
+        }
+
     .experience-galery {
         overflow-y: scroll;
         height: 80%;
@@ -280,8 +297,15 @@ a {
             gap: 5%;
         }
 
+            .experience-galery-Ecommerce > a {
+                height: 70%;
+                width: 100%;
+            }
+
             .experience-galery-Ecommerce > a > img {
                 border-radius: 20px;
+                height: 80%;
+                width: 80%;
             }
 
             .experience-galery-Ecommerce-tittle {
@@ -303,7 +327,7 @@ a {
             }
 
             .experience-galery-Weather-App > a {
-                height: 500%;
+                height: 70%;
                 width: 100%;
             }
 
@@ -312,3 +336,77 @@ a {
                     width: 80%;
                     border-radius: 20px;
                 }
+
+        .experience-galery-RandM-project {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            gap: 5%;
+        }
+
+            .experience-galery-RandM-project-tittle {
+                font-size: x-large;
+                color: var(--colorForHovers);
+            }
+
+                .experience-galery-RandM-project > a {
+                    height: 70%;
+                    width: 100%;
+                }
+
+                    .experience-galery-RandM-project > a > img {
+                        height: 80%;
+                        width: 50%;
+                        border-radius: 20px;
+                    }
+
+        .experience-galery-RN-project {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            gap: 5%;
+        }
+
+            .experience-galery-RN-project-tittle {
+                font-size: x-large;
+                color: var(--colorForHovers);
+            }
+
+                .experience-galery-RN-project > a {
+                    height: 70%;
+                    width: 100%;
+                }
+
+                    .experience-galery-RN-project > a > img {
+                        height: 80%;
+                        width: 20%;
+                        border-radius: 20px;
+                    }    
+
+ /*Styles for the scroll bar start here*/
+
+              /* width */
+              ::-webkit-scrollbar {
+                width: 5px;
+              }
+
+              /* Track */
+              ::-webkit-scrollbar-track {
+                background: transparent;
+              }
+
+              /* Handle */
+              ::-webkit-scrollbar-thumb {
+                background: var(--colorForHovers);
+                border-radius: 50px;
+              }
+
+              /* Handle on hover */
+              ::-webkit-scrollbar-thumb:hover {
+                background: var(--colorForHovers);
+                box-shadow: 3px 3px 30px var(--green-portal);
+              }
+
+/*Styles for the scroll bar end here*/
