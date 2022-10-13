@@ -1,0 +1,314 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+    font-weight: lighter;
+}
+
+:root {
+    --background-color: #181818; 
+    --colorForTittles: #FEFBF6;
+    --colorForHovers: #D2001A;
+}
+
+a {
+    text-decoration: none;
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    cursor: grabbing;
+}
+
+    .home{
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--background-color);  
+        position: fixed;
+        padding: 1%;
+    }
+
+        .introduction-and-pic {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-self: center;
+            position: fixed;
+            flex-wrap: wrap;
+        }
+
+            .pic {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+                .pic > img {
+                    width: 100%;
+                    height: 100%;
+                    padding-left: 3%;
+                }
+
+            .introduction {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: stretch;
+                text-align: center;
+            }
+
+
+                .hi, .iam, .denis, .peace {
+                    color: var(--colorForTittles);
+                    font-size: 10rem;
+                    font-weight: normal;
+                    margin: 1%;
+                }
+
+                .peace {
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 100%;
+                }
+
+                    .peace > a {
+                        width: 30%;
+                        height: 100%;
+                    }
+
+                    .peace > a > img   {
+                        height: 100%;
+                        width: 50%;
+                    }
+
+                        
+
+
+                    .hi:hover {
+                        color: var(--colorForHovers);
+                        animation: opac 0.5s ease-in-out;
+                        cursor: pointer;
+                    }
+
+                    @keyframes opac {
+                        0% {
+                            opacity: 0;
+                        }
+
+                        100% {
+                            opacity: 100%;
+                        }
+                    }
+
+                    .iam:hover {
+                        color: var(--colorForHovers);
+                        animation: opac 0.5s ease-in-out;
+                        cursor: pointer;
+                    }
+
+                    .denis:hover {
+                        color: var(--colorForHovers);
+                        animation: opac 0.5s ease-in-out;
+                        cursor: pointer;
+                    }
+
+                    .peace:hover {
+                        color: var(--colorForHovers);
+                        animation: opac 0.5s ease-in-out;
+                    }
+
+                    .peace > a {
+                        font-size: smaller;
+                    }
+
+/*Styles for about me*/
+
+.aboutme {
+    width: 99%;
+    height: 100%;
+    overflow-x: scroll;
+    animation: movein is ease-in-out;
+}
+
+@keyframes movein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+    .aboutme-header {
+        width: 100%;
+        height: fit-content;
+        position: fixed;
+        display: flex;
+        color: var(--colorForTittles);
+        justify-content: end;
+        padding: 2%;
+        gap: 5%;
+    }
+
+        .goback:hover{
+            cursor: pointer;
+            color: var(--colorForHovers);
+            transition: 0.5s ease-in-out;
+        }
+
+        .aboutmetittle {
+            color: var(--colorForTittles);
+            font-size: 5rem;
+        }
+
+        .aboutme-summary {
+            display: flex;
+            width: 50%;
+            height: 50%;
+            flex-direction: column;
+            padding: 2%;
+            gap: 10%;
+            
+        }
+
+            .aboutme-summary-tittle {
+                color: var(--colorForTittles);
+                font-size: xx-large;
+            }
+
+            .aboutme-summary-list {
+                color: var(--colorForTittles);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 3%;
+                font-size: x-large;
+                
+            }
+
+.aboutme-longerversion {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+    .aboutme-longerversion-title {
+        color: var(--colorForTittles);
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+        .aboutme-longerversion-introVideo-title{
+            color: var(--colorForTittles);
+            font-size: xx-large;
+            padding: 1%;
+        }
+
+        .aboutme-longerversion-introVideo {
+            width: 70%;
+            height: 50%;
+            align-self: center;
+            border-radius: 20px;
+        }
+
+        .aboutme-longerversion-motivationAndSkills-title {
+            color: var(--colorForTittles);
+            font-size: xx-large;
+            padding: 1%;
+            margin-top: 2%;
+        }   
+
+            .aboutme-longerversion-motivationAndSkills-paragrah {
+                color: var(--colorForTittles);
+                font-size: x-large;
+                padding: 1%;
+                margin-top: 2%;
+                line-height: 150%;
+            }
+
+            .aboutme-longerversion-motivationAndSkills-skills {
+                width: 90%;
+                height: 30%;
+                margin-top: 2%;
+                margin-bottom: 2%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 3%;
+            }
+
+                .aboutme-longerversion-motivationAndSkills-skills-tittle {
+                    color: var(--colorForTittles);
+                    font-size: x-large;
+                }
+
+                .aboutme-longerversion-motivationAndSkills-skills > img {
+                    height: 100%;
+                    width: 20%;
+                    border-radius: 50%;
+                }
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    gap: 3%;
+    color: var(--colorForTittles);
+}
+
+    .experience-galery {
+        overflow-y: scroll;
+        height: 80%;
+        width: 100%;
+    }
+
+        .experience-galery-Ecommerce {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            gap: 5%;
+        }
+
+            .experience-galery-Ecommerce > a > img {
+                border-radius: 20px;
+            }
+
+            .experience-galery-Ecommerce-tittle {
+                font-size: x-large;
+                color: var(--colorForHovers);
+            }
+
+        .experience-galery-Weather-App {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            gap: 5%;
+        }
+
+            .experience-galery-Weather-App-tittle {
+                font-size: x-large;
+                color: var(--colorForHovers);
+            }
+
+            .experience-galery-Weather-App > a {
+                height: 500%;
+                width: 100%;
+            }
+
+                .experience-galery-Weather-App > a > img {
+                    height: 80%;
+                    width: 80%;
+                    border-radius: 20px;
+                }
