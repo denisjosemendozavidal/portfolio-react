@@ -47,15 +47,12 @@ function App() {
       {
         istrue? <Aboutme handleIsTrue={handleIsTrue}/> : 
           <div className='introduction-and-pic'>
-            <div className='pic'> {istrueExp ? <Experience/> :
-              <img src="../images/imagenfondo.png" alt="" />
-
-            }
+            <div className='pic'> {istrueExp ? <Experience/> : <img src="../images/imagenfondo.png" alt="" />}
             </div>
             <div className='introduction'>
               <h2 className="hi" onMouseEnter={handleShowletters} onMouseLeave={handleShowletters} onClick={handleIsTrue}>{showLetters? "About me" : "Hi!"}</h2>
               <h2 className="iam" onMouseEnter={handleShowlettersFE} onMouseLeave={handleShowlettersFE} onClick={handleistrueExp}>{istrueFE? "Experience" : "I'm"}</h2>
-              <h1 className='denis' onMouseEnter={handleShowlettersDE} onMouseLeave={handleShowlettersDE}>{istrueDe? "My CV" : "Denis"}</h1> 
+              <a href="../Files/DenisJoséMendozaVidalCV.pdf" target="_blank" download="Denis-Mendoza-CV" className='denis' onMouseEnter={handleShowlettersDE} onMouseLeave={handleShowlettersDE}>{istrueDe? "My CV" : "Denis"}</a> 
               <h2 onMouseEnter={handleShowlettersPeace} onMouseLeave={handleShowlettersPeace} className='peace'>{istruePeace? 
                       <span className='peace'>
                         <a href="https://github.com/denisjosemendozavidal" target="_blank"><img src="../images/github-logo.png" alt="" /></a>
@@ -65,12 +62,8 @@ function App() {
                : "✌🏾"}</h2>  
             </div>
            
-          </div>
-
-          
+          </div> 
       }
-
-                   
 
     </div>
   )
