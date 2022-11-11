@@ -378,6 +378,30 @@ a {
                         border-radius: 20px;
                     }    
 
+        .experience-galery-Poke-project {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            gap: 5%;
+        }
+
+            .experience-galery-Poke-project-tittle {
+                font-size: x-large;
+                color: var(--colorForHovers);
+            }
+
+                .experience-galery-Poke-project > a {
+                    height: 70%;
+                    width: 100%;
+                }
+
+                    .experience-galery-Poke-project > a > img {
+                        height: 80%;
+                        width: 60%;
+                        border-radius: 20px;
+                    }
+
  /*Styles for the scroll bar start here*/
 
               /* width */

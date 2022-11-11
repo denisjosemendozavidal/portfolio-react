@@ -13,6 +13,13 @@ const Experience = () => {
           <p>Please click on the image bellow to be redirected to its Github repository, link: "https://github.com/denisjosemendozavidal/React-native-first.git"</p>
           <a href="https://github.com/denisjosemendozavidal/React-native-first.git" target="_blank"><img src="/images/RN-first.gif" alt="" /></a>
         </div>
+        <div className='experience-galery-Poke-project'>
+          <h3 className='experience-galery-Poke-project-tittle'>The Poke app</h3>
+          <p>Used Tecnologies: React.js, REST APIs, Axios, Among others</p>
+          <p>Idea behind it: Solidifying React redux knowledge</p>
+          <p>Please click on the image bellow to be redirected to its Netlify deployment. (link: "https://denis-mendoza-pokeapi.netlify.app/")</p>
+          <a href="https://denis-mendoza-pokeapi.netlify.app/" target="_blank"><img src="/images/pokeball.gif" alt="" /></a>
+        </div>
         <div className='experience-galery-RandM-project'>
           <h3 className='experience-galery-RandM-project-tittle'>Rick and Morty Project</h3>
           <p>Used Tecnologies: React.js, REST APIs, Axios, Among others</p>
