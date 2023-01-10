@@ -306,7 +306,7 @@ a {
                 color: var(--colorForHovers);
             }
 
-        .experience-galery-Weather-App {
+        .experience-galery-PERN-App {
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -314,17 +314,17 @@ a {
             gap: 5%;
         }
 
-            .experience-galery-Weather-App-tittle {
+            .experience-galery-PERN-App-tittle {
                 font-size: x-large;
                 color: var(--colorForHovers);
             }
 
-            .experience-galery-Weather-App > a {
+            .experience-galery-PERN-App > a {
                 height: 70%;
                 width: 100%;
             }
 
-                .experience-galery-Weather-App > a > img {
+                .experience-galery-PERN-App > a > img {
                     height: 80%;
                     width: 80%;
                     border-radius: 20px;
@@ -709,7 +709,7 @@ color: var(--colorForTittles);
             color: var(--colorForHovers);
         }
 
-    .experience-galery-Weather-App {
+    .experience-galery-PERN-App {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -717,17 +717,17 @@ color: var(--colorForTittles);
         gap: 5%;
     }
 
-        .experience-galery-Weather-App-tittle {
+        .experience-galery-PERN-App-tittle {
             font-size: x-large;
             color: var(--colorForHovers);
         }
 
-        .experience-galery-Weather-App > a {
+        .eexperience-galery-PERN-App > a {
             height: 70%;
             width: 100%;
         }
 
-            .experience-galery-Weather-App > a > img {
+            .experience-galery-PERN-App > a > img {
                 height: 80%;
                 width: 80%;
                 border-radius: 20px;
@@ -1090,7 +1090,7 @@ color: var(--colorForTittles);
             color: var(--colorForHovers);
         }
 
-    .experience-galery-Weather-App {
+    .experience-galery-PERN-App {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -1098,17 +1098,17 @@ color: var(--colorForTittles);
         gap: 5%;
     }
 
-        .experience-galery-Weather-App-tittle {
+        .experience-galery-PERN-App-tittle {
             font-size: x-large;
             color: var(--colorForHovers);
         }
 
-        .experience-galery-Weather-App > a {
+        .experience-galery-PERN-App> a {
             height: 70%;
             width: 100%;
         }
 
-            .experience-galery-Weather-App > a > img {
+            .experience-galery-PERN-App > a > img {
                 height: 80%;
                 width: 80%;
                 border-radius: 20px;
