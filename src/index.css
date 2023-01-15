@@ -330,7 +330,7 @@ a {
                     border-radius: 20px;
                 }
 
-        .experience-galery-RandM-project {
+        .experience-galery-basic-PHP-project {
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -338,17 +338,17 @@ a {
             gap: 5%;
         }
 
-            .experience-galery-RandM-project-tittle {
+            .experience-galery-basic-PHP-project-tittle {
                 font-size: x-large;
                 color: var(--colorForHovers);
             }
 
-                .experience-galery-RandM-project > a {
+                .experience-galery-basic-PHP-project > a {
                     height: 70%;
                     width: 100%;
                 }
 
-                    .experience-galery-RandM-project > a > img {
+                    .experience-galery-basic-PHP-project > a > img {
                         height: 80%;
                         width: 50%;
                         border-radius: 20px;
@@ -733,7 +733,7 @@ color: var(--colorForTittles);
                 border-radius: 20px;
             }
 
-    .experience-galery-RandM-project {
+    .experience-galery-basic-PHP-project {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -741,17 +741,17 @@ color: var(--colorForTittles);
         gap: 5%;
     }
 
-        .experience-galery-RandM-project-tittle {
+        .experience-galery-basic-PHP-project-tittle {
             font-size: x-large;
             color: var(--colorForHovers);
         }
 
-            .experience-galery-RandM-project > a {
+            .experience-galery-basic-PHP-project > a {
                 height: 70%;
                 width: 100%;
             }
 
-                .experience-galery-RandM-project > a > img {
+                .experience-galery-basic-PHP-project > a > img {
                     height: 80%;
                     width: 50%;
                     border-radius: 20px;
@@ -1114,7 +1114,7 @@ color: var(--colorForTittles);
                 border-radius: 20px;
             }
 
-    .experience-galery-RandM-project {
+    .experience-galery-basic-PHP-project {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -1122,17 +1122,17 @@ color: var(--colorForTittles);
         gap: 5%;
     }
 
-        .experience-galery-RandM-project-tittle {
+        .experience-galery-basic-PHP-project-tittle {
             font-size: x-large;
             color: var(--colorForHovers);
         }
 
-            .experience-galery-RandM-project > a {
+            .experience-galery-basic-PHP-project > a {
                 height: 70%;
                 width: 100%;
             }
 
-                .experience-galery-RandM-project > a > img {
+                .experience-galery-basic-PHP-project > a > img {
                     height: 80%;
                     width: 50%;
                     border-radius: 20px;
@@ -1516,7 +1516,7 @@ margin-top: 50px;
             color: var(--colorForHovers);
         }
 
-    .experience-galery-Weather-App {
+    .experience-galery-PERN-App {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -1524,28 +1524,28 @@ margin-top: 50px;
         gap: 10px;
     }
 
-        .experience-galery-Weather-App > p {
+        .experience-galery-PERN-App > p {
             font-size: medium;
             padding: 1%;
         }
 
-        .experience-galery-Weather-App-tittle {
+        .experience-galery-PERN-App-tittle {
             font-size: large;
             color: var(--colorForHovers);
         }
 
-        .experience-galery-Weather-App > a {
+        .experience-galery-PERN-App > a {
             height: 70%;
             width: 100%;
         }
 
-            .experience-galery-Weather-App > a > img {
+            .experience-galery-PERN-App > a > img {
                 height: 80%;
                 width: 80%;
                 border-radius: 20px;
             }
 
-    .experience-galery-RandM-project {
+    .experience-galery-basic-PHP-project {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -1553,22 +1553,22 @@ margin-top: 50px;
         gap: 10px;
     }
 
-        .experience-galery-RandM-project-tittle {
+        .experience-galery-basic-PHP-project-tittle {
             font-size: large;
             color: var(--colorForHovers);
         }
 
-            .experience-galery-RandM-project > p {
+            .experience-galery-basic-PHP-project > p {
                 font-size: medium;
                 padding: 1%;
             }
 
-            .experience-galery-RandM-project > a {
+            .experience-galery-basic-PHP-project > a {
                 height: 70%;
                 width: 100%;
             }
 
-                .experience-galery-RandM-project > a > img {
+                .experience-galery-basic-PHP-project > a > img {
                     height: 80%;
                     width: 50%;
                     border-radius: 20px;
