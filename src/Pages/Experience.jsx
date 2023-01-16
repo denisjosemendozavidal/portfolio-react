@@ -24,6 +24,7 @@ const Experience = () => {
           <h3 className='experience-galery-basic-PHP-project-tittle'>My baby steps with PHP and MySQL</h3>
           <p>Used Tecnologies: Vanilla PHP, My SQL, HTML and Bootstrap</p>
           <p>Idea behind it: Learning how to build something with vanilla PHP.</p>
+          <p>Link to its github Repo: https://github.com/denisjosemendozavidal/My-First-PHP-MySQL-ap</p>
           <p>Please click on the image bellow to be redirected to its deployment. (link: "https://my-baby-steps-with-php.000webhostapp.com/index.php")</p>
           <a href="https://my-baby-steps-with-php.000webhostapp.com/index.php" target="_blank"><img src="/images/phpmysql.png" alt="" /></a>
         </div>
