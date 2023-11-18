@@ -4,6 +4,8 @@ import Aboutme from "./Pages/Aboutme";
 import Experience from "./Pages/Experience";
 
 function App() {
+  //Checking
+
   const [istrue, setIstrue] = useState(false);
   const [showLetters, setShowLetters] = useState(false);
   const [istrueFE, setistrueFE] = useState(false);
