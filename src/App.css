@@ -1,0 +1,238 @@
+/*
+Styling notes for Denis: 
+1. Navbar Menu options, need to make them visible
+2. Reach out options need to make them visible
+
+*/
+
+/* Styling for Navbar Begins here */
+
+/*Styling for navbar as a whole start here*/
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: black solid;
+  padding: 1%;
+  max-height: 70px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.navbar-a-tag {
+  color: black;
+}
+
+/*Styling for navbar as a whole end here*/
+
+.navbar-options-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 3%;
+  width: 40%;
+  padding: 5px;
+}
+
+.navbar-menu-title-wrapper {
+  display: flex;
+}
+
+.navbar-menu-title-wrapper img {
+  height: 20px;
+}
+
+.navbar-menu-title-wrapper:hover img {
+  transform: rotate(90deg);
+  transition: ease-in-out 0.5s;
+}
+
+.navbar-menu-options {
+  display: none;
+}
+
+/* For Later, Hover, was not such a great idea
+.navbar-menu-wrapper:hover .navbar-menu-options {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 10px;
+  padding: 5px;
+  margin-top: 10px;
+}
+*/
+
+.navbar-reach-out-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-reach-out-title-wrapper {
+  display: flex;
+}
+
+.navbar-reach-out-title-wrapper img {
+  height: 20px;
+}
+
+.navbar-reach-out-title-wrapper:hover img {
+  transform: rotate(90deg);
+  transition: ease-in-out 0.5s;
+}
+
+/*Reach out options, need to remember to make them visible*/
+
+.navbar-reach-out-options {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.navbar-reach-out-options a {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-reach-out-options a img {
+  width: 100%;
+}
+
+/* Styling for Navbar ends here */
+
+/*Styling for the Hero section Start here*/
+
+.hero-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.hero-section-text-ctas-wrapper {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-section-text-header-wrapper {
+  width: 100%;
+}
+
+.hero-section-text-header-wrapper h1 {
+  background-image: linear-gradient(
+    108deg,
+    #007bff 10%,
+    #0056b3 30%,
+    #28a745 60%,
+    #ffd700 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 75px;
+  font-weight: bold;
+}
+
+.hero-section-text-subheader h2 {
+  font-size: 22px;
+  font-weight: lighter;
+  color: #666666;
+}
+
+.hero-section-ctas-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 80%;
+  gap: 10px;
+  align-self: flex-start;
+}
+
+.hero-section-ctas-download-my-cv-wrapper {
+  transition: ease-in-out 1s;
+  width: fit-content;
+  display: flex;
+}
+
+.hero-section-ctas-download-my-cv-wrapper a {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.hero-section-ctas-download-my-cv-wrapper img {
+  width: 30px;
+  height: 30px;
+}
+
+.hero-section-ctas-find-me-on-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.hero-section-ctas-find-me-on-title-checkmark {
+  display: flex;
+  align-items: center;
+}
+
+.hero-section-ctas-find-me-on-title-checkmark img {
+  width: 30px;
+  height: 30px;
+}
+
+.hero-section-ctas-find-me-on-options-wrapper {
+  display: flex;
+
+  width: 70%;
+  justify-content: space-between;
+}
+
+.hero-section-ctas-find-me-on-options-wrapper a {
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.hero-section-ctas-find-me-on-options-wrapper img {
+  width: 30px;
+  height: 30px;
+}
+
+.hero-section-ctas-email-me-title-checkmark-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.hero-section-ctas-email-me-title-checkmark-wrapper img {
+  width: 30px;
+  height: 30px;
+}
+
+.hero-section-ctas-email-me-title-checkmark-wrapper a {
+  color: black;
+}
+
+.hero-section-img-wrapper {
+  width: 39%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-section-img-wrapper img {
+  height: 65%;
+  width: auto;
+}
+
+/*Styling for the Hero Section ends here*/

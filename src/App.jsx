@@ -3,166 +3,131 @@ import "./App.css";
 import Aboutme from "./Pages/Aboutme";
 import Experience from "./Pages/Experience";
 
-function App() {
-  //Checking
-
-  const [istrue, setIstrue] = useState(false);
-  const [showLetters, setShowLetters] = useState(false);
-  const [istrueFE, setistrueFE] = useState(false);
-  const [istrueDe, setIstrueDe] = useState(false);
-  const [istruePeace, setIstruePeace] = useState(false);
-  const [istrueExp, setistrueExp] = useState(false);
-  const [originalHeight, setOriginalHeight] = useState("");
-  const [originalWidth, setOriginalWidth] = useState("");
-  const [mouseX, setMouseX] = useState(0);
-  const [mouseY, setMouseY] = useState(0);
-  const [xRotation, setXRotation] = useState(0);
-  const [yRotation, setYRotation] = useState(0);
-  //const [picWrapper, setPicWrapper] = useState();
-  const [transformStyle, setTransformStyle] = useState({});
-
-  const handleMouseLeave = () => {
-    setShowLetters(false);
-    setistrueFE(false);
-    setIstruePeace(false);
-  };
-
-  const handleIsTrue = () => {
-    setIstrue(!istrue);
-  };
-
-  const handleShowletters = () => {
-    setShowLetters(true);
-  };
-
-  const handleShowlettersFE = () => {
-    setistrueFE(true);
-  };
-
-  const handleShowlettersDE = () => {
-    setIstrueDe(!istrueDe);
-  };
-
-  const handleShowlettersPeace = () => {
-    setIstruePeace(true);
-  };
-
-  const handleistrueExp = () => {
-    setistrueExp(!istrueExp);
-  };
-
-  const picWrapper = useRef(null);
-
-  const handleMouseIn = (e) => {
-    picWrapper.current = document.getElementById("pic-wrapper");
-    setOriginalHeight(picWrapper.current.clientHeight);
-    setOriginalWidth(picWrapper.current.clientWidth);
-    const { clientX, clientY } = e;
-    const rect = picWrapper.current.getBoundingClientRect();
-    setMouseX(clientX - rect.left);
-    setMouseY(clientY - rect.top);
-    setYRotation(((mouseX - originalWidth / 2) / originalWidth) * 20);
-    setXRotation(((mouseY - originalHeight / 2) / originalHeight) * 20);
-
-    const string = `
-      perspective(500px)
-      scale(1.1)
-      rotateX(${xRotation}deg)
-      rotateY(${yRotation}deg)
-    `;
-
-    picWrapper.current.style.transform = string;
-  };
-
-  const handleMouseOut = (e) => {
-    picWrapper.current.style.transform = "none";
-  };
-
+const Navbar = () => {
   return (
-    <div className="App">
-      {istrue ? (
-        <Aboutme handleIsTrue={handleIsTrue} />
-      ) : (
-        <div className="introduction-and-pic">
-          <div className="pic">
-            {" "}
-            {istrueExp ? (
-              <Experience />
-            ) : (
-              <div
-                className={`pic-wrapper`}
-                id="pic-wrapper"
-                onMouseLeave={handleMouseOut}
-                onMouseMove={handleMouseIn}
-              >
-                <img
-                  className="selfie"
-                  src="../images/imagenfondo.png"
-                  alt=""
-                />
-              </div>
-            )}
-          </div>
-          <div className="introduction">
-            <h2
-              className="hi"
-              onMouseEnter={handleShowletters}
-              onMouseLeave={handleMouseLeave}
-              onClick={handleIsTrue}
-            >
-              {showLetters ? "About me" : "Hi!"}
-            </h2>
-            <h2
-              className="iam"
-              onMouseEnter={handleShowlettersFE}
-              onMouseLeave={handleMouseLeave}
-              onClick={handleistrueExp}
-            >
-              {istrueFE ? "Experience" : "I'm"}
-            </h2>
-            <a
-              href="../Files/DenisJoséMendozaVidalCV.pdf"
-              target="_blank"
-              download="Denis-Mendoza-CV"
-              className="denis"
-              onMouseEnter={handleShowlettersDE}
-              onMouseLeave={handleShowlettersDE}
-            >
-              {istrueDe ? "My CV" : "Denis"}
+    <div className="navbar">
+      <div className="Logo">Denis Mendoza.</div>
+
+      <div className="navbar-options-wrapper">
+        <div className="navbar-languages-options-wrapper">
+          <a className="navbar-a-tag" href="">
+            Spanish
+          </a>{" "}
+          /{" "}
+          <a className="navbar-a-tag" href="">
+            English
+          </a>
+        </div>
+        <div className="navbar-menu-wrapper">
+          {" "}
+          <div className="navbar-menu-title-wrapper">
+            <a className="navbar-a-tag" href="">
+              Menu
             </a>
-            <h2
-              onMouseEnter={handleShowlettersPeace}
-              onMouseLeave={handleMouseLeave}
-              className="peace"
-            >
-              {istruePeace ? (
-                <span className="peace">
-                  <a
-                    href="https://github.com/denisjosemendozavidal"
-                    target="_blank"
-                  >
-                    <img src="../images/github-logo.png" alt="" />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/denis-mendoza-a085b518b"
-                    target="_blank"
-                  >
-                    <img src="../images/linkedin-logo.png" alt="" />
-                  </a>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=573044612480"
-                    target="_blank"
-                  >
-                    <img src="../images/whatsapp-logo.png" alt="" />
-                  </a>
-                </span>
-              ) : (
-                "✌🏾"
-              )}
-            </h2>
+            <img src="../images/rightarrow.svg" alt="" />
+          </div>
+          <div className="navbar-menu-options">
+            <a className="navbar-a-tag" href="">
+              Section #1
+            </a>
+            <a className="navbar-a-tag" href="">
+              Section #2
+            </a>
+            <a className="navbar-a-tag" href="">
+              Section #3
+            </a>
           </div>
         </div>
-      )}
+        <div className="navbar-reach-out-wrapper">
+          <div className="navbar-reach-out-title-wrapper">
+            <a className="navbar-a-tag" href="">
+              Reach Out
+            </a>
+            <img src="../images/rightarrow.svg" alt="" />
+          </div>
+          <div className="navbar-reach-out-options">
+            <a className="navbar-a-tag" href="">
+              <img src="../images/linkedin-logo.png" alt="" />
+            </a>
+            <a className="navbar-a-tag" href="">
+              <img src="../images/whatsapp-logo.png" alt="" />
+            </a>
+            <a
+              className="navbar-a-tag"
+              href="mailto:denismendozavidal@gmail.com"
+            >
+              denismendozavidal@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const HeroSection = () => {
+  return (
+    <div className="hero-section">
+      <div className="hero-section-text-ctas-wrapper">
+        <div className="hero-section-text-header-wrapper">
+          <h1>I Code And Solve Problems.</h1>
+        </div>
+        <div className="hero-section-text-subheader">
+          <h2>
+            Hi! I'm Denis a Full Stack, (Front End React.js Heavy), Next.js web
+            developer with a natural ability to learn and solve problems. Let's
+            get in touch:
+          </h2>
+        </div>
+        <div className="hero-section-ctas-wrapper">
+          <div className="hero-section-ctas-download-my-cv-wrapper">
+            <a
+              className="hero-section-ctas-download-my-cv-button"
+              href="../Files/DenisJoséMendozaVidalCV.pdf"
+              target="_Blank"
+            >
+              <img src="../images/checkmark.png" alt="" />
+              Download My CV
+            </a>
+          </div>
+          <div className="hero-section-ctas-find-me-on-wrapper">
+            <div className="hero-section-ctas-find-me-on-title-checkmark">
+              <img src="../images/checkmark.png" alt="" />
+              Find me on:
+            </div>
+            <div className="hero-section-ctas-find-me-on-options-wrapper">
+              <a href="">
+                <img src="../images/github-logo.png" alt="" />
+                GitHub
+              </a>
+
+              <a href="">
+                <img src="../images/whatsapp-logo.png" alt="" /> Whatsapp
+              </a>
+
+              <a href="">
+                <img src="../images/linkedin-logo.png" alt="" /> Linkedin
+              </a>
+            </div>
+          </div>
+          <div className="hero-section-ctas-email-me-title-checkmark-wrapper">
+            <img src="../images/checkmark.png" alt="" />
+            <a href="">Email me at: Denismendozavidal@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div className="hero-section-img-wrapper">
+        <img src="../images/imagenfondo.png" alt="" />
+      </div>
+    </div>
+  );
+};
+
+function App() {
+  return (
+    <div className="App">
+      <Navbar />
+      <HeroSection />
     </div>
   );
 }
