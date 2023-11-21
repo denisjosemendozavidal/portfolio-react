@@ -291,3 +291,160 @@ Styling notes for Denis:
 }
 
 /*Styling for the AboutMe Section ends here*/
+
+/*Styling for the Skills and knowledge section start here*/
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1%;
+  justify-content: center;
+  align-items: center;
+  border: black solid;
+}
+
+.skills-title-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+
+.skills-title-wrapper h2 {
+  background-image: linear-gradient(
+    108deg,
+    #007bff 10%,
+    #0056b3 30%,
+    #28a745 60%,
+    #ffd700 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  font-weight: 350px;
+}
+
+.skills-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5%;
+}
+
+.soft-skills-card,
+.tech-skills-card,
+.other-skills-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 45%;
+  padding: 5%;
+  border: black solid;
+  border-radius: 20px;
+  margin-top: 5%;
+}
+
+.soft-skills-title-wrapper,
+.tech-skills-title-wrapper,
+.other-skills-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.soft-skills-element,
+.tech-skills-element,
+.other-skills-element {
+  padding: 1%;
+  line-height: 0.8cm;
+}
+
+/*Styling for the Skills and knowledge section end here*/
+
+/*Final CTA section styling starts here*/
+
+.final-cta-section-wrapper {
+  border: black solid;
+  border-radius: 20px;
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.final-cta-section-title-wrapper {
+  width: 100%;
+  border: black solid;
+  padding: 2%;
+  text-align: center;
+}
+
+.final-cta-section-download-my-cv-wrapper {
+  width: fit-content;
+  display: flex;
+}
+
+.final-cta-section-download-my-cv-wrapper a {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.final-cta-section-download-my-cv-wrapper img {
+  width: 30px;
+  height: 30px;
+}
+
+.final-cta-section-find-me-on-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.final-cta-section-find-me-on-title-checkmark {
+  display: flex;
+  align-items: center;
+}
+
+.final-cta-section-find-me-on-title-checkmark img {
+  width: 30px;
+  height: 30px;
+}
+
+.final-cta-section-find-me-on-options-wrapper {
+  display: flex;
+  width: 70%;
+  gap: 5%;
+}
+
+.final-cta-section-find-me-on-options-wrapper a {
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.final-cta-section-find-me-on-options-wrapper img {
+  width: 30px;
+  height: 30px;
+}
+
+.final-cta-section-email-me-at-title-checkmark-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.final-cta-section-email-me-at-title-checkmark-wrapper img {
+  width: 30px;
+  height: 30px;
+}
+
+.final-cta-section-email-me-at-title-checkmark-wrapper a {
+  color: black;
+}
+
+/*Final CTA section styling ends here*/
