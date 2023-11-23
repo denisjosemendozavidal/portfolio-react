@@ -8,62 +8,39 @@ import Experience from "./Pages/Experience";
 //Navbar component starts here
 const Navbar = () => {
   return (
-    <div className="navbar">
-      <div className="Logo">Denis Mendoza.</div>
-
-      <div className="navbar-options-wrapper">
-        <div className="navbar-languages-options-wrapper">
-          <a className="navbar-a-tag" href="">
-            Spanish
-          </a>{" "}
-          /{" "}
-          <a className="navbar-a-tag" href="">
-            English
+    <div className="navbar-overall-wrapper">
+      <nav className="navbar">
+        <h2 className="navbar-welcome-message">
+          Hi, I'm Denis, Welcome to my portfolio site! Enjoy!
+        </h2>
+        {/*
+        <div className="Logo">
+          <a href="/" className="navbar-logo-text">
+            Denis Mendoza.
           </a>
         </div>
-        <div className="navbar-menu-wrapper">
-          {" "}
-          <div className="navbar-menu-title-wrapper">
+        <div className="navbar-options-wrapper">
+          <div className="navbar-reach-out-wrapper">
+            <p className="navbar-reach-out-text" href="">
+              Reach Out:
+            </p>
             <a className="navbar-a-tag" href="">
-              Menu
-            </a>
-            <img src="../images/rightarrow.svg" alt="" />
-          </div>
-          <div className="navbar-menu-options">
-            <a className="navbar-a-tag" href="">
-              Section #1
+              Linkedin,
             </a>
             <a className="navbar-a-tag" href="">
-              Section #2
-            </a>
-            <a className="navbar-a-tag" href="">
-              Section #3
-            </a>
-          </div>
-        </div>
-        <div className="navbar-reach-out-wrapper">
-          <div className="navbar-reach-out-title-wrapper">
-            <a className="navbar-a-tag" href="">
-              Reach Out
-            </a>
-            <img src="../images/rightarrow.svg" alt="" />
-          </div>
-          <div className="navbar-reach-out-options">
-            <a className="navbar-a-tag" href="">
-              <img src="../images/linkedin-logo.png" alt="" />
-            </a>
-            <a className="navbar-a-tag" href="">
-              <img src="../images/whatsapp-logo.png" alt="" />
+              WhatsApp
             </a>
             <a
               className="navbar-a-tag"
               href="mailto:denismendozavidal@gmail.com"
             >
-              denismendozavidal@gmail.com
+              or denismendozavidal@gmail.com
             </a>
           </div>
         </div>
-      </div>
+        
+        */}
+      </nav>
     </div>
   );
 };
@@ -74,56 +51,62 @@ const Navbar = () => {
 const HeroSection = () => {
   return (
     <div className="hero-section">
-      <div className="hero-section-text-ctas-wrapper">
-        <div className="hero-section-text-header-wrapper">
-          <h1>I Code And Solve Problems.</h1>
-        </div>
-        <div className="hero-section-text-subheader">
-          <h2>
-            Hi! I'm Denis, your go-to React.js Front End Web Developer with a
-            special knack for learning and problem solving. Excited to team up?
-            Let’s chat:
-          </h2>
-        </div>
-        <div className="hero-section-ctas-wrapper">
-          <div className="hero-section-ctas-download-my-cv-wrapper">
-            <a
-              className="hero-section-ctas-download-my-cv-button"
-              href="../Files/DenisJoséMendozaVidalCV.pdf"
-              target="_Blank"
-            >
-              <img src="../images/checkmark.png" alt="" />
-              Download My CV
-            </a>
+      <div className="hero-section-left-side-wrapper">
+        <div className="hero-section-text-ctas-wrapper">
+          <div className="hero-section-text-header-wrapper">
+            <h1>I Code And Solve Problems.</h1>
           </div>
-          <div className="hero-section-ctas-find-me-on-wrapper">
-            <div className="hero-section-ctas-find-me-on-title-checkmark">
-              <img src="../images/checkmark.png" alt="" />
-              Find me on:
-            </div>
-            <div className="hero-section-ctas-find-me-on-options-wrapper">
-              <a href="">
-                <img src="../images/whatsapp-logo.png" alt="" /> Whatsapp
-              </a>
-
-              <a href="">
-                <img src="../images/github-logo.png" alt="" />
-                GitHub
-              </a>
-
-              <a href="">
-                <img src="../images/linkedin-logo.png" alt="" /> Linkedin
+          <div className="hero-section-text-subheader">
+            <h2>
+              Hi! I'm Denis, your go-to React.js Front End Web Developer with a
+              special knack for learning and problem solving. Excited to team
+              up? Let’s chat:
+            </h2>
+          </div>
+          <div className="hero-section-ctas-wrapper">
+            <div className="hero-section-ctas-download-my-cv-wrapper">
+              <a
+                className="hero-section-ctas-download-my-cv-button"
+                href="../Files/DenisJoséMendozaVidalCV.pdf"
+                target="_Blank"
+              >
+                <img src="../images/checkmark.png" alt="" />
+                Download My CV
               </a>
             </div>
-          </div>
-          <div className="hero-section-ctas-email-me-title-checkmark-wrapper">
-            <img src="../images/checkmark.png" alt="" />
-            <a href="">Email me at: Denismendozavidal@gmail.com</a>
+            <div className="hero-section-ctas-find-me-on-wrapper">
+              <div className="hero-section-ctas-find-me-on-title-checkmark">
+                <img src="../images/checkmark.png" alt="" />
+                Find me on:
+              </div>
+              <div className="hero-section-ctas-find-me-on-options-wrapper">
+                <a href="">
+                  <img src="../images/whatsapp-logo.png" alt="" /> Whatsapp
+                </a>
+
+                <a href="">
+                  <img src="../images/github-logo.png" alt="" />
+                  GitHub
+                </a>
+
+                <a href="">
+                  <img src="../images/linkedin-logo.png" alt="" /> Linkedin
+                </a>
+              </div>
+            </div>
+            <div className="hero-section-ctas-email-me-title-checkmark-wrapper">
+              <img src="../images/checkmark.png" alt="" />
+              <a href="">Email me at: Denismendozavidal@gmail.com</a>
+            </div>
           </div>
         </div>
       </div>
       <div className="hero-section-img-wrapper">
-        <img src="../images/imagenfondo.png" alt="" />
+        <img
+          className="hero-section-img"
+          src="../images/SelfieBlackAndWhite.jpeg"
+          alt=""
+        />
       </div>
     </div>
   );
@@ -134,7 +117,7 @@ const HeroSection = () => {
 // AboutMe component starts here
 const AboutMe = () => {
   return (
-    <div className="about-me-section-wrapper">
+    <div className="about-me-section-wrapper" id="aboutMe">
       <div className="about-me-section-title-description-wrapper">
         <div className="about-me-section-title-wrapper">
           <h2>About me</h2>
@@ -152,11 +135,9 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-      <div className="about-me-section-content-wrapper">
-        <div className="about-me-section-content-video-wrapper">
-          {" "}
-          <video src="/images/Video/Introduction.mp4" controls></video>
-        </div>
+      <div className="about-me-section-content-video-wrapper">
+        {" "}
+        <video src="/images/Video/Introduction.mp4" controls></video>
       </div>
     </div>
   );
@@ -423,17 +404,67 @@ const FinalCtaSection = () => {
 
 //Final CTA section component ends here
 
+//aboutMe-projects-workexperience-skills-finalCtaSection-wrapper component starts here
+
+const OverallWrapper = () => {
+  const components = {
+    0: <AboutMe />,
+    1: <Projects />,
+    2: <WorkExperience />,
+    3: <Skills />,
+    4: <FinalCtaSection />,
+  };
+
+  const buttons = [
+    "About Me",
+    "Projects",
+    "Work Experience",
+    "Skills",
+    "Contact Me",
+  ];
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleClick = (index) => {
+    setActiveIndex(index);
+  };
+
+  return (
+    <div className="aboutMe-projects-workexperience-skills-finalCtaSection-wrapper">
+      <div className="aboutMe-projects-workexperience-skills-finalCtaSection-buttons-wrapper">
+        {buttons.map((button, index) => (
+          <a
+            key={index}
+            href="#"
+            title=""
+            className={`aboutMe-projects-workexperience-skills-finalCtaSection-buttons ${
+              activeIndex === index
+                ? "aboutMe-projects-workexperience-skills-finalCtaSection-active-buttons"
+                : "aboutMe-projects-workexperience-skills-finalCtaSection-inactive-buttons"
+            }`}
+            onClick={(e) => {
+              e.preventDefault();
+              handleClick(index);
+            }}
+          >
+            {button}
+          </a>
+        ))}
+      </div>
+      {components[activeIndex]}
+    </div>
+  );
+};
+
+//aboutMe-projects-workexperience-skills-finalCtaSection-wrapper ends here
+
 //App component starts here
 function App() {
   return (
     <div className="App">
       <Navbar />
       <HeroSection />
-      <AboutMe />
-      <Projects />
-      <WorkExperience />
-      <Skills />
-      <FinalCtaSection />
+      <OverallWrapper />
     </div>
   );
 }

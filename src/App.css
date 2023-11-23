@@ -9,18 +9,27 @@ Styling notes for Denis:
 
 /*Styling for navbar as a whole start here*/
 
+.navbar-overall-wrapper {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  max-height: 70px;
+  flex-wrap: wrap;
+  border: gray solid 0.2px;
+  position: fixed;
+  z-index: 5;
+}
+
 .navbar {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  border: black solid;
+  justify-content: center;
   padding: 1%;
   max-height: 70px;
   flex-wrap: wrap;
   overflow: hidden;
   align-items: center;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  align-content: center;
 }
 
 .navbar-a-tag {
@@ -29,68 +38,34 @@ Styling notes for Denis:
 
 /*Styling for navbar as a whole end here*/
 
+.navbar-logo-text {
+  color: black;
+}
+
 .navbar-options-wrapper {
   display: flex;
   justify-content: space-around;
   gap: 3%;
-  width: 40%;
+  width: 50%;
   padding: 5px;
 }
-
-.navbar-menu-title-wrapper {
-  display: flex;
-}
-
-.navbar-menu-title-wrapper img {
-  height: 20px;
-}
-
-.navbar-menu-title-wrapper:hover img {
-  transform: rotate(90deg);
-  transition: ease-in-out 0.5s;
-}
-
-.navbar-menu-options {
-  display: none;
-}
-
-/* For Later, Hover, was not such a great idea
-.navbar-menu-wrapper:hover .navbar-menu-options {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  gap: 10px;
-  padding: 5px;
-  margin-top: 10px;
-}
-*/
 
 .navbar-reach-out-wrapper {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 2%;
 }
-
-.navbar-reach-out-title-wrapper {
-  display: flex;
-}
-
-.navbar-reach-out-title-wrapper img {
-  height: 20px;
-}
-
-.navbar-reach-out-title-wrapper:hover img {
-  transform: rotate(90deg);
-  transition: ease-in-out 0.5s;
-}
-
-/*Reach out options, need to remember to make them visible*/
 
 .navbar-reach-out-options {
-  position: absolute;
-  display: none;
-  flex-direction: column;
-  margin-top: 30px;
-  gap: 10px;
+  display: flex;
+  gap: 2%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .navbar-reach-out-options a {
@@ -100,6 +75,12 @@ Styling notes for Denis:
 
 .navbar-reach-out-options a img {
   width: 100%;
+  height: 100%;
+}
+
+.navbar-welcome-message {
+  font-weight: normal;
+  font-size: 1.5rem;
 }
 
 /* Styling for Navbar ends here */
@@ -108,19 +89,35 @@ Styling notes for Denis:
 
 .hero-section {
   width: 100%;
+  height: 800px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 5px;
+  margin-top: 70px;
+}
+
+.hero-section-left-side-wrapper {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  background-color: #f5f5f5;
 }
 
 .hero-section-text-ctas-wrapper {
-  width: 60%;
+  width: 80%;
+  min-width: 80%;
+  height: 80%;
+  padding: 5%;
+  gap: 5%;
+  background-color: transparent;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
 }
 
 .hero-section-text-header-wrapper {
@@ -128,17 +125,10 @@ Styling notes for Denis:
 }
 
 .hero-section-text-header-wrapper h1 {
-  background-image: linear-gradient(
-    108deg,
-    #007bff 10%,
-    #0056b3 30%,
-    #28a745 60%,
-    #ffd700 90%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-size: 75px;
-  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
 .hero-section-text-subheader h2 {
@@ -223,228 +213,115 @@ Styling notes for Denis:
 }
 
 .hero-section-img-wrapper {
-  width: 39%;
-  height: 800px;
+  width: auto;
+  height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-.hero-section-img-wrapper img {
-  height: 80%;
-  width: auto;
+.hero-section-img {
+  height: 950px;
+  width: 100%;
+  object-fit: fill;
 }
 
 /*Styling for the Hero Section ends here*/
 
-/*Styling for the AboutMe Section starts here*/
+/*Styling for the aboutMe-projects-workexperience-skills-finalCtaSection-wrapper Starts here*/
 
-.about-me-section-wrapper {
+.aboutMe-projects-workexperience-skills-finalCtaSection-wrapper {
+  width: 100%;
+  padding-bottom: 2%;
+  height: fit-content;
+  background-color: black;
+  border-top-left-radius: 40px;
+  z-index: 6;
+  margin-top: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutMe-projects-workexperience-skills-finalCtaSection-buttons-wrapper {
   display: flex;
   width: 100%;
+  max-width: 1181px;
+  gap: 1%;
   flex-wrap: wrap;
-  gap: 50px;
+  justify-content: space-around;
+  padding: 1%;
+}
+
+.aboutMe-projects-workexperience-skills-finalCtaSection-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500px;
+  text-align: center;
+  width: 15%;
+  transition: ease-in-out 0.5s;
+  border-radius: 20px;
+}
+
+.aboutMe-projects-workexperience-skills-finalCtaSection-active-buttons {
+  background-color: white;
+  color: black;
+  transition: ease-in-out 0.5s;
+}
+
+/*Styling for the aboutMe-projects-workexperience-skills-finalCtaSection-wrapper Starts ends*/
+
+/*Styling for the About section start here*/
+
+.about-me-section-wrapper {
+  max-width: 1181px;
+  width: 100%;
+  color: #f5f5f5;
 }
 
 .about-me-section-title-description-wrapper {
-  display: flex;
-  gap: 1%;
   width: 100%;
+  display: flex;
+  gap: 5%;
+  padding: 2%;
+  margin-top: 3%;
 }
 
 .about-me-section-title-wrapper {
-  width: 75%;
+  width: 35%;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
 }
 
 .about-me-section-title-wrapper h2 {
-  background-image: linear-gradient(
-    108deg,
-    #007bff 10%,
-    #0056b3 30%,
-    #28a745 60%,
-    #ffd700 90%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 35px;
-  font-weight: 350px;
+  font-size: 24px;
+  font-weight: normal;
+  color: transparent;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white;
 }
 
 .about-me-section-description-wrapper {
-  padding: 1%;
-  line-height: 0.8cm;
-}
-
-.about-me-section-content-wrapper {
-  width: 100%;
+  font-weight: lighter;
+  line-height: 1cm;
+  font-size: 20px;
+  width: 60%;
 }
 
 .about-me-section-content-video-wrapper {
+  border: purple solid;
   width: 100%;
+  height: fit-content;
 }
 
 .about-me-section-content-video-wrapper video {
   width: 100%;
+  height: auto;
 }
 
-/*Styling for the AboutMe Section ends here*/
-
-/*Styling for the Skills and knowledge section start here*/
-
-.skills-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 1%;
-  justify-content: center;
-  align-items: center;
-  border: black solid;
-}
-
-.skills-title-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1%;
-}
-
-.skills-title-wrapper h2 {
-  background-image: linear-gradient(
-    108deg,
-    #007bff 10%,
-    #0056b3 30%,
-    #28a745 60%,
-    #ffd700 90%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 35px;
-  font-weight: 350px;
-}
-
-.skills-cards-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 5%;
-}
-
-.soft-skills-card,
-.tech-skills-card,
-.other-skills-card {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 45%;
-  padding: 5%;
-  border: black solid;
-  border-radius: 20px;
-  margin-top: 5%;
-}
-
-.soft-skills-title-wrapper,
-.tech-skills-title-wrapper,
-.other-skills-title-wrapper {
-  display: flex;
-  flex-direction: column;
-  padding: 5%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.soft-skills-element,
-.tech-skills-element,
-.other-skills-element {
-  padding: 1%;
-  line-height: 0.8cm;
-}
-
-/*Styling for the Skills and knowledge section end here*/
-
-/*Final CTA section styling starts here*/
-
-.final-cta-section-wrapper {
-  border: black solid;
-  border-radius: 20px;
-  width: 100%;
-  padding: 5%;
-  display: flex;
-  flex-direction: column;
-}
-
-.final-cta-section-title-wrapper {
-  width: 100%;
-  border: black solid;
-  padding: 2%;
-  text-align: center;
-}
-
-.final-cta-section-download-my-cv-wrapper {
-  width: fit-content;
-  display: flex;
-}
-
-.final-cta-section-download-my-cv-wrapper a {
-  display: flex;
-  align-items: center;
-  color: black;
-}
-
-.final-cta-section-download-my-cv-wrapper img {
-  width: 30px;
-  height: 30px;
-}
-
-.final-cta-section-find-me-on-wrapper {
-  display: flex;
-  gap: 10px;
-}
-
-.final-cta-section-find-me-on-title-checkmark {
-  display: flex;
-  align-items: center;
-}
-
-.final-cta-section-find-me-on-title-checkmark img {
-  width: 30px;
-  height: 30px;
-}
-
-.final-cta-section-find-me-on-options-wrapper {
-  display: flex;
-  width: 70%;
-  gap: 5%;
-}
-
-.final-cta-section-find-me-on-options-wrapper a {
-  color: black;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.final-cta-section-find-me-on-options-wrapper img {
-  width: 30px;
-  height: 30px;
-}
-
-.final-cta-section-email-me-at-title-checkmark-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.final-cta-section-email-me-at-title-checkmark-wrapper img {
-  width: 30px;
-  height: 30px;
-}
-
-.final-cta-section-email-me-at-title-checkmark-wrapper a {
-  color: black;
-}
-
-/*Final CTA section styling ends here*/
+/*Styling for the About me section end here*/
