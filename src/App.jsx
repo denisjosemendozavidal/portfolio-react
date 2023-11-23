@@ -137,7 +137,11 @@ const AboutMe = () => {
       </div>
       <div className="about-me-section-content-video-wrapper">
         {" "}
-        <video src="/images/Video/Introduction.mp4" controls></video>
+        <video
+          poster="../images/SelfieBlackAndWhite.jpeg"
+          src="/images/Video/Introduction.mp4"
+          controls
+        ></video>
       </div>
     </div>
   );
@@ -407,6 +411,8 @@ const FinalCtaSection = () => {
 //aboutMe-projects-workexperience-skills-finalCtaSection-wrapper component starts here
 
 const OverallWrapper = () => {
+  const ref = useRef(null);
+
   const components = {
     0: <AboutMe />,
     1: <Projects />,
@@ -427,11 +433,15 @@ const OverallWrapper = () => {
 
   const handleClick = (index) => {
     setActiveIndex(index);
+    ref.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <div className="aboutMe-projects-workexperience-skills-finalCtaSection-wrapper">
-      <div className="aboutMe-projects-workexperience-skills-finalCtaSection-buttons-wrapper">
+      <div
+        ref={ref}
+        className="aboutMe-projects-workexperience-skills-finalCtaSection-buttons-wrapper"
+      >
         {buttons.map((button, index) => (
           <a
             key={index}

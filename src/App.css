@@ -233,6 +233,7 @@ Styling notes for Denis:
   width: 100%;
   padding-bottom: 2%;
   height: fit-content;
+  min-height: 900px;
   background-color: black;
   border-top-left-radius: 40px;
   z-index: 6;
