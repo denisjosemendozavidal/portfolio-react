@@ -176,16 +176,30 @@ const WorkExperience = () => {
         <h3>Work Experience</h3>
       </div>
       <div className="work-experience-section-jobs-list">
-        <div className="work-experience-section-webrun">
+        <a className="work-experience-section-webrun" href="">
           {" "}
+          <div className="work-experience-section-webrun-title">
+            <h3>Company: Webrun Lambs</h3>
+          </div>
           <div className="work-experience-section-webrun-title-wrapper">
-            <h4>Project Manager / Product Owner / Tech Lead at WebRun</h4>
+            <h4>
+              <span className="work-experience-section-webrun-bold-letters">
+                Job Title
+              </span>{" "}
+              Project Manager / Product Owner / Tech Lead at WebRun
+            </h4>
           </div>
           <div className="work-experience-section-webrun-job-description-wrapper">
             <div className="work-experience-section-webrun-job-description-lenght">
+              <span className="work-experience-section-webrun-bold-letters">
+                Duration:
+              </span>{" "}
               February 2023 to Present
             </div>
             <div className="work-experience-section-webrun-job-description-job-type">
+              <span className="work-experience-section-webrun-bold-letters">
+                Type of Job:
+              </span>{" "}
               Remote
             </div>
             <div className="work-experience-section-webrun-job-description">
@@ -206,7 +220,8 @@ const WorkExperience = () => {
               landmarks.
             </div>
           </div>
-        </div>
+        </a>
+        <div className="work-experience-section-webrun"></div>
       </div>
     </div>
   );

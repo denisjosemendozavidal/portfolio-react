@@ -13,7 +13,7 @@ Styling notes for Denis:
   width: 100%;
   display: flex;
   background-color: white;
-  max-height: 70px;
+  height: 60px;
   flex-wrap: wrap;
   border: gray solid 0.2px;
   position: fixed;
@@ -24,8 +24,10 @@ Styling notes for Denis:
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  align-content: center;
   padding: 1%;
-  max-height: 70px;
+  height: 100%;
   flex-wrap: wrap;
   overflow: hidden;
   align-items: center;
@@ -91,10 +93,11 @@ Styling notes for Denis:
   width: 100%;
   height: 800px;
   display: flex;
+  align-items: flex-start;
   overflow: hidden;
   position: fixed;
   z-index: 5px;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 .hero-section-left-side-wrapper {
@@ -212,18 +215,17 @@ Styling notes for Denis:
 }
 
 .hero-section-img-wrapper {
-  width: auto;
-  min-width: 40%;
-  max-width: 40%;
-  height: auto;
+  width: 40%;
+  height: 100%;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .hero-section-img {
-  height: auto;
-  width: 100%;
-  object-fit: fill;
+  height: 800px;
+  width: 800px;
+  object-fit: cover;
 }
 
 /*Styling for the Hero Section ends here*/
@@ -330,3 +332,46 @@ Styling notes for Denis:
 }
 
 /*Styling for the About me section end here*/
+
+/*Styling for Work Experience starts here*/
+
+.work-experience-section-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: fit-content;
+  width: 100%;
+  gap: 5%;
+  margin-top: 3%;
+  max-width: 1181px;
+  font-weight: lighter;
+}
+
+.work-experience-section-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.work-experience-section-title-wrapper h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+  color: transparent;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white;
+  width: 100%;
+}
+
+.work-experience-section-webrun {
+  color: white;
+  line-height: 2rem;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.work-experience-section-webrun-bold-letters {
+  font-weight: bold;
+}
+/*Styling for Work Experience ends here*/
