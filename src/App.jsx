@@ -138,7 +138,7 @@ const AboutMe = () => {
       <div className="about-me-section-content-video-wrapper">
         {" "}
         <video
-          poster="../images/SelfieBlackAndWhite.jpeg"
+          poster="../images/Thumbnail.jpeg"
           src="/images/Video/Introduction.mp4"
           controls
         ></video>

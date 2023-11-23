@@ -114,7 +114,6 @@ Styling notes for Denis:
   gap: 5%;
   background-color: transparent;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -125,14 +124,14 @@ Styling notes for Denis:
 }
 
 .hero-section-text-header-wrapper h1 {
-  font-size: 75px;
+  font-size: 4.5rem;
   color: transparent;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 }
 
 .hero-section-text-subheader h2 {
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: lighter;
   color: #666666;
   line-height: 1cm;
@@ -167,7 +166,7 @@ Styling notes for Denis:
 
 .hero-section-ctas-find-me-on-wrapper {
   display: flex;
-  gap: 10px;
+  gap: 2%;
 }
 
 .hero-section-ctas-find-me-on-title-checkmark {
@@ -183,7 +182,7 @@ Styling notes for Denis:
 .hero-section-ctas-find-me-on-options-wrapper {
   display: flex;
   width: 70%;
-  gap: 5%;
+  gap: 2%;
 }
 
 .hero-section-ctas-find-me-on-options-wrapper a {
@@ -214,13 +213,15 @@ Styling notes for Denis:
 
 .hero-section-img-wrapper {
   width: auto;
-  height: 100%;
+  min-width: 40%;
+  max-width: 40%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
 }
 
 .hero-section-img {
-  height: 950px;
+  height: auto;
   width: 100%;
   object-fit: fill;
 }
@@ -282,6 +283,9 @@ Styling notes for Denis:
   max-width: 1181px;
   width: 100%;
   color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 
 .about-me-section-title-description-wrapper {
@@ -315,7 +319,6 @@ Styling notes for Denis:
 }
 
 .about-me-section-content-video-wrapper {
-  border: purple solid;
   width: 100%;
   height: fit-content;
 }
@@ -323,6 +326,7 @@ Styling notes for Denis:
 .about-me-section-content-video-wrapper video {
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 /*Styling for the About me section end here*/
