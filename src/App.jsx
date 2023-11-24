@@ -13,33 +13,6 @@ const Navbar = () => {
         <h2 className="navbar-welcome-message">
           Hi, I'm Denis, Welcome to my portfolio! Enjoy!
         </h2>
-        {/*
-        <div className="Logo">
-          <a href="/" className="navbar-logo-text">
-            Denis Mendoza.
-          </a>
-        </div>
-        <div className="navbar-options-wrapper">
-          <div className="navbar-reach-out-wrapper">
-            <p className="navbar-reach-out-text" href="">
-              Reach Out:
-            </p>
-            <a className="navbar-a-tag" href="">
-              Linkedin,
-            </a>
-            <a className="navbar-a-tag" href="">
-              WhatsApp
-            </a>
-            <a
-              className="navbar-a-tag"
-              href="mailto:denismendozavidal@gmail.com"
-            >
-              or denismendozavidal@gmail.com
-            </a>
-          </div>
-        </div>
-        
-        */}
       </nav>
     </div>
   );

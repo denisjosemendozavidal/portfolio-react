@@ -34,52 +34,6 @@ Styling notes for Denis:
   align-content: center;
 }
 
-.navbar-a-tag {
-  color: black;
-}
-
-/*Styling for navbar as a whole end here*/
-
-.navbar-logo-text {
-  color: black;
-}
-
-.navbar-options-wrapper {
-  display: flex;
-  justify-content: space-around;
-  gap: 3%;
-  width: 50%;
-  padding: 5px;
-}
-
-.navbar-reach-out-wrapper {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  gap: 2%;
-}
-
-.navbar-reach-out-options {
-  display: flex;
-  gap: 2%;
-  width: 50%;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.navbar-reach-out-options a {
-  width: 30px;
-  height: 30px;
-}
-
-.navbar-reach-out-options a img {
-  width: 100%;
-  height: 100%;
-}
-
 .navbar-welcome-message {
   font-weight: normal;
   font-size: 1.5rem;
@@ -145,7 +99,7 @@ Styling notes for Denis:
   flex-direction: column;
   flex-wrap: wrap;
   overflow: hidden;
-  width: 80%;
+  width: 100%;
   gap: 10px;
   align-self: flex-start;
 }
@@ -154,6 +108,7 @@ Styling notes for Denis:
   transition: ease-in-out 1s;
   width: fit-content;
   display: flex;
+  width: 100%;
 }
 
 .hero-section-ctas-download-my-cv-wrapper a {
@@ -223,8 +178,8 @@ Styling notes for Denis:
 }
 
 .hero-section-img {
-  height: 800px;
-  width: 800px;
+  height: 850px;
+  width: 850px;
   object-fit: cover;
 }
 
@@ -389,7 +344,7 @@ Styling notes for Denis:
 }
 
 .work-experience-section-specific-job-accordion-title-active {
-  width: 70%;
+  width: 80%;
 }
 
 .work-experience-section-specific-job-accordion-title-inactive {
@@ -571,3 +526,258 @@ Styling notes for Denis:
 }
 
 /*Styling for Final CTA / Contact me section ends here*/
+
+/*Styling for Responsiveness Starts here*/
+
+/*Styling for 1300px to 900px Starts here*/
+
+@media (max-width: 1300px) {
+  /*Styling for Hero seciton start here*/
+
+  .hero-section {
+    display: flex;
+    height: 700px;
+  }
+
+  .hero-section-left-side-wrapper {
+    width: 70%;
+    justify-content: center;
+  }
+
+  .hero-section-text-header-wrapper h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-section-text-subheader h2 {
+    font-size: 1rem;
+    line-height: 0.7cm;
+  }
+
+  .hero-section-ctas-download-my-cv-wrapper a {
+    gap: 10px;
+    width: 100%;
+  }
+
+  .hero-section-ctas-download-my-cv-wrapper img {
+    width: 20px;
+    height: auto;
+  }
+
+  .hero-section-ctas-find-me-on-wrapper {
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+  }
+
+  .hero-section-ctas-find-me-on-title-checkmark {
+    gap: 10px;
+    width: 30%;
+    width: fit-content;
+  }
+
+  .hero-section-ctas-find-me-on-title-checkmark img {
+    width: 20px;
+    height: auto;
+  }
+
+  .hero-section-ctas-find-me-on-options-wrapper {
+    width: 70%;
+    gap: 5px;
+  }
+
+  .hero-section-ctas-find-me-on-options-wrapper a {
+    font-size: 15px;
+  }
+
+  .hero-section-ctas-find-me-on-options-wrapper a img {
+    width: 20px;
+    height: auto;
+  }
+
+  .hero-section-ctas-email-me-title-checkmark-wrapper {
+    gap: 5px;
+  }
+
+  .hero-section-ctas-email-me-title-checkmark-wrapper img {
+    width: 20px;
+    height: auto;
+  }
+
+  .hero-section-img-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-section-img {
+    height: 710px;
+    width: 710px;
+    object-fit: cover;
+  }
+
+  /*Styling for Hero Section ends here*/
+
+  /*Styling for the Overall wrapper starts here*/
+
+  .aboutMe-projects-workexperience-skills-finalCtaSection-wrapper {
+    margin-top: 700px;
+  }
+
+  /*Styling for the Overall wrapper ends here*/
+
+  /*Styling for the ABout me section start here*/
+
+  .about-me-section-wrapper {
+    padding: 5%;
+  }
+
+  /*Styling for the About me section ends here*/
+
+  /*Styling for Work Experience section starts here*/
+
+  .work-experience-section-wrapper {
+    padding: 5%;
+  }
+
+  /*Styling for Work experience seciton ends here*/
+
+  /*Styling for the Skills Section start here*/
+
+  .skills-wrapper {
+    padding: 5%;
+  }
+
+  /*Styling for the Skills section end here*/
+
+  /*Styling for Final CTA / Contact me section starts here*/
+  .final-cta-section-wrapper {
+    padding: 5%;
+  }
+
+  /*Styling for Final CTA / Contact me section starts here*/
+}
+
+/*Styling for 1300px to 900px Ends here*/
+
+/*Styling for all 900px and less start here*/
+
+@media (max-width: 899px) {
+  /*Styling for the Navbar starts here*/
+
+  .navbar {
+    display: flex;
+  }
+
+  .navbar-welcome-message {
+    width: 100%;
+    font-weight: normal;
+    font-size: 1rem;
+    padding: 1%;
+    text-align: center;
+  }
+
+  /*Styling for the navbar ends here*/
+
+  /*Styling for Hero section starts here*/
+
+  .hero-section {
+    height: 850px;
+  }
+
+  .hero-section-left-side-wrapper {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .hero-section-text-ctas-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+  }
+
+  .hero-section-text-header-wrapper {
+    width: 100%;
+  }
+
+  .hero-section-text-header-wrapper h1 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  .hero-section-text-subheader h2 {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .hero-section-ctas-wrapper {
+    gap: 30px;
+  }
+
+  .hero-section-ctas-download-my-cv-wrapper a {
+    font-size: 20px;
+  }
+
+  .hero-section-ctas-download-my-cv-wrapper img {
+    width: 30px;
+    height: auto;
+  }
+
+  .hero-section-ctas-find-me-on-title-checkmark {
+    width: fit-content;
+    font-size: 20px;
+    justify-content: center;
+  }
+
+  .hero-section-ctas-find-me-on-title-checkmark img {
+    width: 30px;
+    height: auto;
+  }
+
+  .hero-section-ctas-find-me-on-options-wrapper {
+    width: fit-content;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .hero-section-ctas-find-me-on-options-wrapper a {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    width: 100%;
+    text-decoration: underline;
+  }
+
+  .hero-section-ctas-find-me-on-options-wrapper a img {
+    display: none;
+  }
+
+  .hero-section-ctas-email-me-title-checkmark-wrapper img {
+    height: 30px;
+    width: auto;
+  }
+
+  .hero-section-ctas-email-me-title-checkmark-wrapper a {
+    font-size: 20px;
+  }
+
+  .hero-section-img-wrapper {
+    display: none;
+  }
+
+  /*Styling for Hero section ends here*/
+
+  /*Styling for the overall wrapper starts here*/
+
+  .aboutMe-projects-workexperience-skills-finalCtaSection-wrapper {
+    margin-top: 870px;
+  }
+
+  /*Styling for overall wrapper ends here*/
+}
+
+/*Styling for all 900xp and less ends here*/
+
+/*Styling for responsiveness ends here*/
