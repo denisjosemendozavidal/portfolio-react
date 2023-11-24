@@ -1,6 +1,6 @@
 # My Portfolio.
 
-Deployment: https://portfolio.denismendoza.site/ or https://portfolio-denis-mendoza.netlify.app/
+Deployment: https://portfolio-denis-mendoza.netlify.app/
 
 Welcome to my portfolio, with this readme I intend to explain a little bit about, starting with the languages,the idea or concept behind it and the structure of it. 
 
