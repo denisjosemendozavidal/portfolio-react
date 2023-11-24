@@ -155,7 +155,7 @@ const Projects = () => {
   return (
     <div className="projects-section-wrapper">
       <div className="projects-section-title-wrapper">
-        <h3>Projects I've Helped with</h3>
+        <h2>Projects I've Helped with</h2>
       </div>{" "}
       <div className="projects-section-content">
         <div className="projects-section-pseo-project-wrapper"></div>{" "}
@@ -214,7 +214,7 @@ const WorkExperience = () => {
       url: "https://gototruckers.com/",
       jobTitle:
         "Inside Sales Representative / Account Manager / Carrier sales (Remote)",
-      duration: "March 2019 to May 2019",
+      duration: "March 2018 to May 2019",
       typeOfJob: "Remote",
       jobDescription: `As an Inside Sales Representative/Account Manager/Carrier Sales 
       at Go To Truckers INC, I bridged the gap between shippers and carriers across 
@@ -237,7 +237,7 @@ const WorkExperience = () => {
   return (
     <div className="work-experience-section-wrapper">
       <div className="work-experience-section-title-wrapper">
-        <h3>Work Experience</h3>
+        <h2>Work Experience</h2>
       </div>
       <div className="work-experience-section-jobs-list-wrapper">
         {jobsData.map((jobData) => (
@@ -326,126 +326,167 @@ const Skills = () => {
       </div>
       <div className="skills-cards-wrapper">
         {" "}
-        <div className="soft-skills-card">
-          <div className="soft-skills-title-wrapper">
+        <div className="skills-card">
+          <div className="skills-card-title-wrapper">
             <h3>Soft Skills</h3>
           </div>
-          <div className="soft-skills-list-wrapper">
+          <div className="skills-card-list-wrapper">
             {" "}
-            <ul className="soft-skills-list">
-              <li className="soft-skills-element">
+            <ul className="skills-card-list">
+              <li className="skills-card-element">
                 {" "}
-                Great Communicator: I'm all about clear and effective
-                communication. Whether it's with my team or clients.
+                <span className="skills-card-element-bold-letters">
+                  Great Communicator:
+                </span>{" "}
+                I'm all about clear and effective communication. Whether it's
+                with my team or clients.
               </li>
-              <li className="soft-skills-element">
+              <li className="skills-card-element">
                 {" "}
-                Resilient and Adaptable: New challenges? Different projects? I’m
-                your guy. I thrive on adapting to whatever comes my way, always
-                ready to tackle new requirements with a can-do attitude.
+                <span className="skills-card-element-bold-letters">
+                  Resilient and Adaptable:
+                </span>{" "}
+                New challenges? Different projects? I’m your guy. I thrive on
+                adapting to whatever comes my way, always ready to tackle new
+                requirements with a can-do attitude.
               </li>
-              <li className="soft-skills-element">
+              <li className="skills-card-element">
                 {" "}
-                Self-Motivated: I bring enthusiasm and energy to everything I
-                do. Staying motivated and involved comes naturally to me, and
-                it's what keeps me going and growing in my career.
+                <span className="skills-card-element-bold-letters">
+                  Self-Motivated:
+                </span>{" "}
+                I bring enthusiasm and energy to everything I do. Staying
+                motivated and involved comes naturally to me, and it's what
+                keeps me going and growing in my career.
               </li>
-              <li className="soft-skills-element">
+              <li className="skills-card-element">
                 {" "}
-                Committed to Excellence: For me, good enough is never enough.
-                I’m dedicated to delivering top-quality work, no matter how big
-                or small the task is.
+                <span className="skills-card-element-bold-letters">
+                  Committed to Excellence:
+                </span>{" "}
+                For me, good enough is never enough. I’m dedicated to delivering
+                top-quality work, no matter how big or small the task is.
               </li>
-              <li className="soft-skills-element">
+              <li className="skills-card-element">
                 {" "}
-                Quick Learner and Problem Solver: I pick up new skills fast and
-                love solving problems. Whether it’s a tricky coding issue or a
-                new tool, I’m on it, figuring things out as I go.
+                <span className="skills-card-element-bold-letters">
+                  Quick Learner and Problem Solver:
+                </span>{" "}
+                I pick up new skills fast and love solving problems. Whether
+                it’s a tricky coding issue or a new tool, I’m on it, figuring
+                things out as I go.
               </li>
             </ul>
           </div>
         </div>{" "}
-        <div className="tech-skills-card">
-          <div className="tech-skills-title-wrapper">
+        <div className="skills-card">
+          <div className="skills-card-title-wrapper">
             <h3>Tech Skills</h3>
           </div>
-          <div className="tech-skills-list-wrapper">
+          <div className="skills-card-list-wrapper">
             {" "}
-            <ul className="tech-skills-list">
-              <li className="tech-skills-element">
+            <ul className="skills-card-list">
+              <li className="skills-card-element">
                 {" "}
-                Skilled in Git and GitHub: I'm comfortable with Git and GitHub,
-                making it easy for me to handle version control and collaborate
-                smoothly on coding projects.
+                <span className="skills-card-element-bold-letters">
+                  Skilled in Git and GitHub:{" "}
+                </span>
+                I'm comfortable with Git and GitHub, making it easy for me to
+                handle version control and collaborate smoothly on coding
+                projects.
               </li>
-              <li className="tech-skills-element">
+              <li className="skills-card-element">
                 {" "}
-                Web Development Expertise: With a solid foundation in CSS and
-                HTML, I craft clean and responsive web designs, ensuring a
-                seamless user experience. My proficiency in JavaScript and
-                React.js enables me to build interactive and engaging web
-                applications.
+                <span className="skills-card-element-bold-letters">
+                  Web Development Expertise:
+                </span>{" "}
+                With a solid foundation in CSS and HTML, I craft clean and
+                responsive web designs, ensuring a seamless user experience. My
+                proficiency in JavaScript and React.js enables me to build
+                interactive and engaging web applications.
               </li>
-              <li className="tech-skills-element">
+              <li className="skills-card-element">
                 {" "}
-                Skilled in RESTful API Integration: I have extensive experience
-                working with RESTful APIs. My ability to integrate and utilize
-                these APIs allows me to enhance web applications with robust and
-                dynamic functionalities, ensuring a more powerful and seamless
-                user experience.
+                <span className="skills-card-element-bold-letters">
+                  Skilled in RESTful API Integration:{" "}
+                </span>
+                I have extensive experience working with RESTful APIs. My
+                ability to integrate and utilize these APIs allows me to enhance
+                web applications with robust and dynamic functionalities,
+                ensuring a more powerful and seamless user experience.
               </li>
-              <li className="tech-skills-element">
+              <li className="skills-card-element">
                 {" "}
-                Focused on Scalable Coding: When I code, I always keep
-                scalability in mind, ensuring that the applications I develop
-                are not only effective now but also adaptable for future needs.
+                <span className="skills-card-element-bold-letters">
+                  Focused on Scalable Coding:{" "}
+                </span>
+                When I code, I always keep scalability in mind, ensuring that
+                the applications I develop are not only effective now but also
+                adaptable for future needs.
               </li>
-              <li className="tech-skills-element">
+              <li className="skills-card-element">
                 {" "}
-                Knowledgeable in Node.js and Next.js: I have a good
-                understanding of Node.js and Next.js, allowing me to work on
+                <span className="skills-card-element-bold-letters">
+                  Knowledgeable in Next.js:{" "}
+                </span>
+                I have a good understanding of Next.js, allowing me to work on
                 server-side aspects and server-rendered apps with confidence.
               </li>
             </ul>
           </div>
         </div>{" "}
-        <div className="other-skills-card">
-          <div className="other-skills-title-wrapper">
+        <div className="skills-card">
+          <div className="skills-card-title-wrapper">
             <h3>Other Skills</h3>
           </div>
-          <div className="other-skills-list-wrapper">
+          <div className="skills-card-list-wrapper">
             {" "}
-            <ul className="other-skills-list">
-              <li className="other-skills-element">
+            <ul className="skills-card-list">
+              <li className="skills-card-element">
                 {" "}
-                Effective Leadership: I possess strong leadership skills,
-                guiding teams with a clear vision and a collaborative approach
-                to achieve our goals together.
+                <span className="skills-card-element-bold-letters">
+                  Effective Leadership:{" "}
+                </span>
+                I possess strong leadership skills, guiding teams with a clear
+                vision and a collaborative approach to achieve our goals
+                together.
               </li>
-              <li className="other-skills-element">
+              <li className="skills-card-element">
                 {" "}
-                Big Picture Awareness: I have a keen understanding of the
-                broader context of projects, which helps me identify where my
-                contribution fits into the overall scheme.
+                <span className="skills-card-element-bold-letters">
+                  Big Picture Awareness:{" "}
+                </span>
+                I have a keen understanding of the broader context of projects,
+                which helps me identify where my contribution fits into the
+                overall scheme.
               </li>
-              <li className="other-skills-element">
+              <li className="skills-card-element">
                 {" "}
-                Seamless Contribution Handoffs: I'm focused on ensuring smooth
-                transitions in the workflow. I gather all necessary inputs
-                efficiently from preceding stages and provide comprehensive
-                outputs to the next, ensuring no detail is missed.
+                <span className="skills-card-element-bold-letters">
+                  Seamless Contribution Handoffs:{" "}
+                </span>
+                I'm focused on ensuring smooth transitions in the workflow. I
+                gather all necessary inputs efficiently from preceding stages
+                and provide comprehensive outputs to the next, ensuring no
+                detail is missed.
               </li>
-              <li className="other-skills-element">
+              <li className="skills-card-element">
                 {" "}
-                Collaborative Team Player: I excel in working with different
-                team members, understanding their roles, and ensuring that my
-                work aligns perfectly with theirs for a cohesive outcome.
+                <span className="skills-card-element-bold-letters">
+                  Collaborative Team Player:{" "}
+                </span>
+                I excel in working with different team members, understanding
+                their roles, and ensuring that my work aligns perfectly with
+                theirs for a cohesive outcome.
               </li>
-              <li className="other-skills-element">
+              <li className="skills-card-element">
                 {" "}
-                Success-Oriented: My aim is always towards the successful
-                completion of the project. I make sure that my part is done
-                excellently, contributing to the overall success of the team.
+                <span className="skills-card-element-bold-letters">
+                  Success-Oriented:{" "}
+                </span>
+                My aim is always towards the successful completion of the
+                project. I make sure that my part is done excellently,
+                contributing to the overall success of the team.
               </li>
             </ul>
           </div>
