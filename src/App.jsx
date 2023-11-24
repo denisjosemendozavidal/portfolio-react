@@ -139,6 +139,7 @@ const AboutMe = () => {
 const Projects = () => {
   return (
     <div className="projects-section-wrapper">
+      <h2 className="projects-section-comming-soon-message">Coming Soon...</h2>
       <div className="projects-section-title-wrapper">
         <h2>Projects I've Helped with</h2>
       </div>{" "}
