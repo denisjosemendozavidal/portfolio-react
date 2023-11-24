@@ -491,6 +491,10 @@ Styling notes for Denis:
   font-size: x-large;
 }
 
+.aboutMe-projects-workexperience-skills-finalCtaSection-leftarrow {
+  display: none;
+}
+
 .final-cta-section-contact-item-checkmark {
   width: 50px;
   height: auto;
@@ -628,6 +632,10 @@ Styling notes for Denis:
   /*Styling for the ABout me section start here*/
 
   .about-me-section-wrapper {
+    padding: 5%;
+  }
+
+  .about-me-section-content-video-wrapper {
     padding: 5%;
   }
 
@@ -773,9 +781,111 @@ Styling notes for Denis:
 
   .aboutMe-projects-workexperience-skills-finalCtaSection-wrapper {
     margin-top: 870px;
+    flex-wrap: nowrap;
+  }
+
+  .aboutMe-projects-workexperience-skills-finalCtaSection-buttons-wrapper {
+    padding: 5%;
+    justify-content: space-around;
+    gap: 15px;
+  }
+
+  .aboutMe-projects-workexperience-skills-finalCtaSection-buttons {
+    width: 70%;
+    font-size: 20px;
   }
 
   /*Styling for overall wrapper ends here*/
+
+  /*Styling for the About me Section starts here*/
+  .about-me-section-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .about-me-section-title-description-wrapper {
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+  }
+
+  .about-me-section-title-wrapper {
+    width: 100%;
+  }
+
+  .about-me-section-description-wrapper {
+    width: 100%;
+  }
+
+  .about-me-section-description-wrapper {
+    text-align: center;
+  }
+
+  /*Styling for the About me section ends here*/
+
+  /*Styling for the Work Experience Section starts here*/
+
+  .work-experience-section-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .work-experience-section-jobs-list-wrapper {
+    text-align: center;
+  }
+
+  .work-experience-section-specific-job-accordion-title-and-symbol-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .work-experience-section-specific-job-accordion-content-job-description {
+    text-align: left;
+  }
+
+  /*Styling for the Work Experience section ends here*/
+
+  /*Styling for Skills Start here*/
+
+  .skills-cards-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .skills-card {
+    width: 100%;
+  }
+
+  .skills-card-list {
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  /*Styling for Skills end here*/
+
+  /*Style for Final CTA / Contact me section starts here*/
+
+  .final-cta-section-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .final-cta-section-title-wrapper {
+    width: 100%;
+  }
+
+  .final-cta-section-find-me-on-mobile-wrapper {
+    border: purple solid;
+    flex-direction: column;
+  }
+
+  .final-cta-section-find-me-on-options-wrapper {
+    flex-direction: column;
+  }
+
+  /*Style for Final CTA / Contact me section ends here*/
 }
 
 /*Styling for all 900xp and less ends here*/

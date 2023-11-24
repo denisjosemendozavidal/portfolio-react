@@ -508,7 +508,7 @@ const FinalCtaSection = () => {
               Download My CV
             </a>
           </div>
-          <div className="final-cta-section-contact-item-wrapper">
+          <div className="final-cta-section-contact-item-wrapper final-cta-section-find-me-on-mobile-wrapper">
             <div className="final-cta-section-find-me-on-title-checkmark">
               <img
                 className="final-cta-section-contact-item-checkmark"
@@ -567,6 +567,7 @@ const FinalCtaSection = () => {
 
 const OverallWrapper = () => {
   const ref = useRef(null);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const components = {
     0: <AboutMe />,
