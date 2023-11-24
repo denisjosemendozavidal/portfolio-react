@@ -347,11 +347,19 @@ Styling notes for Denis:
   font-weight: lighter;
 }
 
-.work-experience-section-title-wrapper {
+.work-experience-section-jobs-list-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  gap: 50px;
+}
+
+.work-experience-section-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .work-experience-section-title-wrapper h3 {
@@ -364,14 +372,55 @@ Styling notes for Denis:
   width: 100%;
 }
 
-.work-experience-section-webrun {
+.work-experience-section-specific-job-wrapper {
   color: white;
   line-height: 2rem;
   font-weight: lighter;
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  gap: 5px;
 }
 
-.work-experience-section-webrun-bold-letters {
-  font-weight: bold;
+.work-experience-section-specific-job-accordion-title-and-symbol-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
+
+.work-experience-section-specific-job-accordion-title-active {
+  width: 70%;
+}
+
+.work-experience-section-specific-job-accordion-title-inactive {
+  width: 70%;
+  color: transparent;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white;
+  cursor: pointer;
+}
+
+.work-experience-section-specific-job-accordion-symbol {
+  cursor: pointer;
+}
+
+.work-experience-section-specific-job-accordion-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: 1cm;
+}
+
+.work-experience-section-specific-job-accordion-content-company-name {
+  color: #f5f5f5;
+}
+
+.work-experience-section-specific-job-accordion-content-bold-letters {
+  color: darkgray;
+}
+
+.work-experience-section-specific-job-accordion-content-company-name-url {
+  text-decoration: underline darkgray;
+}
+
 /*Styling for Work Experience ends here*/

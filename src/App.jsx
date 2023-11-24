@@ -170,58 +170,146 @@ const Projects = () => {
 //Work experience component starts here
 
 const WorkExperience = () => {
+  const jobsData = [
+    {
+      company: "Webrun Labs",
+      url: "https://www.webrun.com/",
+      jobTitle: "Project Manager / Product Owner / Tech Lead",
+      duration: "February 2023 to Present",
+      typeOfJob: "Remote",
+      jobDescription: `At WebRun, a Webflow development agency, I wear many hats, from
+      Project Manager and Product Owner to Tech Lead. My day-to-day
+      involves spinning the gears behind stunning, high-converting
+      websites and landing pages. It all starts with deep-diving into
+      our clients' worlds, understanding their industry, ambitions, and
+      brand soul. Then, like a conductor, I translate these insights
+      into vibrant, actionable plans for our design team, ensuring we
+      not only grasp but magnificently bring to life each project's
+      vision. While I may not be hands-on with code every day, my
+      expertise stretches from overseeing flawless design integration in
+      Webflow to occasionally weaving my magic in Next.js. Using a
+      toolkit brimming with custom JavaScript, Airtable, Customer.io,
+      and Make.com, I craft digital experiences that captivate and
+      convert, turning our clients’ dreams into impressive digital
+      landmarks.`,
+    },
+    {
+      company: "Loadsmart",
+      url: "https://loadsmart.com/",
+      jobTitle: "Carrier Sales Manager",
+      duration: "August 2019 to August 2022",
+      typeOfJob: "Remote",
+      jobDescription: `In my role as Carrier Sales Manager at Loadsmart, 
+      I led eight representatives globally, focusing on training, coaching, 
+      and achieving key objectives. My role involved collaborating with 
+      multiple departments, significantly increasing load deliveries, 
+      carrier usage, and gross margin. I established the Carrier Support 
+      division, enhancing cost metrics. As a Carrier Sales Rep previously, 
+      I built strong relationships with trucking companies, achieving a 
+      milestone of delivering over 100 loads in a month as the first 
+      offshore representative.`,
+    },
+    {
+      company: "Go To Truckers INC",
+      url: "https://gototruckers.com/",
+      jobTitle:
+        "Inside Sales Representative / Account Manager / Carrier sales (Remote)",
+      duration: "March 2019 to May 2019",
+      typeOfJob: "Remote",
+      jobDescription: `As an Inside Sales Representative/Account Manager/Carrier Sales 
+      at Go To Truckers INC, I bridged the gap between shippers and carriers across 
+      the continental USA. My role involved securing business, procuring capacity within 
+      our network, and ensuring high service standards. Responsibilities included scheduling 
+      pickups and deliveries, aligning with carriers' and facilities' operational timings, 
+      and overseeing timely pickups and deliveries. Additionally, I managed unexpected 
+      situations during loading and unloading. Post-delivery, my duties encompassed paperwork 
+      management, including service agreements and proof of delivery, ensuring clear 
+      communication of service costs and payment timelines between customers and carriers.`,
+    },
+  ];
+
+  const [clickedToOpen, setClickedToOpen] = useState("Webrun Labs");
+
+  const handleOpenAccordinClick = (company) => {
+    setClickedToOpen(company);
+  };
+
   return (
     <div className="work-experience-section-wrapper">
       <div className="work-experience-section-title-wrapper">
         <h3>Work Experience</h3>
       </div>
-      <div className="work-experience-section-jobs-list">
-        <a className="work-experience-section-webrun" href="">
-          {" "}
-          <div className="work-experience-section-webrun-title">
-            <h3>Company: Webrun Lambs</h3>
-          </div>
-          <div className="work-experience-section-webrun-title-wrapper">
-            <h4>
-              <span className="work-experience-section-webrun-bold-letters">
-                Job Title
-              </span>{" "}
-              Project Manager / Product Owner / Tech Lead at WebRun
-            </h4>
-          </div>
-          <div className="work-experience-section-webrun-job-description-wrapper">
-            <div className="work-experience-section-webrun-job-description-lenght">
-              <span className="work-experience-section-webrun-bold-letters">
-                Duration:
-              </span>{" "}
-              February 2023 to Present
+      <div className="work-experience-section-jobs-list-wrapper">
+        {jobsData.map((jobData) => (
+          <>
+            <hr />
+            <div className="work-experience-section-specific-job-wrapper">
+              <div
+                className="work-experience-section-specific-job-accordion-title-and-symbol-wrapper"
+                onClick={() => handleOpenAccordinClick(jobData.company)}
+              >
+                <h3
+                  className={
+                    clickedToOpen === jobData.company
+                      ? "work-experience-section-specific-job-accordion-title-active"
+                      : "work-experience-section-specific-job-accordion-title-inactive"
+                  }
+                >
+                  {jobData.jobTitle} at {jobData.company}
+                </h3>
+                <div className="work-experience-section-specific-job-accordion-symbol">
+                  {clickedToOpen != jobData.company && "+"}
+                </div>
+              </div>
+              {clickedToOpen === jobData.company && (
+                <div className="work-experience-section-specific-job-accordion-content">
+                  <a
+                    className="work-experience-section-specific-job-accordion-content-company-name"
+                    href={jobData.url}
+                    target="_blank"
+                  >
+                    <h4>
+                      <span className="work-experience-section-specific-job-accordion-content-bold-letters">
+                        Company:
+                      </span>{" "}
+                      <span className="work-experience-section-specific-job-accordion-content-company-name-url">
+                        {jobData.company}
+                      </span>
+                    </h4>
+                  </a>
+                  <div className="work-experience-section-specific-job-accordion-content-job-title">
+                    <h4>
+                      <span className="work-experience-section-specific-job-accordion-content-bold-letters">
+                        Job Title:
+                      </span>{" "}
+                      {jobData.jobTitle}
+                    </h4>
+                  </div>
+
+                  <div className="work-experience-section-specific-job-accordion-content-job-lenght">
+                    <span className="work-experience-section-specific-job-accordion-content-bold-letters">
+                      Duration:
+                    </span>{" "}
+                    {jobData.duration}
+                  </div>
+
+                  <div className="work-experience-section-specific-job-accordion-content-job-type">
+                    <span className="work-experience-section-specific-job-accordion-content-bold-letters">
+                      Type of Job:
+                    </span>{" "}
+                    {jobData.typeOfJob}
+                  </div>
+                  <div className="work-experience-section-specific-job-accordion-content-job-description">
+                    <span className="work-experience-section-specific-job-accordion-content-bold-letters">
+                      Job Description:
+                    </span>{" "}
+                    {jobData.jobDescription}
+                  </div>
+                </div>
+              )}
             </div>
-            <div className="work-experience-section-webrun-job-description-job-type">
-              <span className="work-experience-section-webrun-bold-letters">
-                Type of Job:
-              </span>{" "}
-              Remote
-            </div>
-            <div className="work-experience-section-webrun-job-description">
-              At WebRun, a Webflow development agency, I wear many hats, from
-              Project Manager and Product Owner to Tech Lead. My day-to-day
-              involves spinning the gears behind stunning, high-converting
-              websites and landing pages. It all starts with deep-diving into
-              our clients' worlds, understanding their industry, ambitions, and
-              brand soul. Then, like a conductor, I translate these insights
-              into vibrant, actionable plans for our design team, ensuring we
-              not only grasp but magnificently bring to life each project's
-              vision. While I may not be hands-on with code every day, my
-              expertise stretches from overseeing flawless design integration in
-              Webflow to occasionally weaving my magic in Next.js. Using a
-              toolkit brimming with custom JavaScript, Airtable, Customer.io,
-              and Make.com, I craft digital experiences that captivate and
-              convert, turning our clients’ dreams into impressive digital
-              landmarks.
-            </div>
-          </div>
-        </a>
-        <div className="work-experience-section-webrun"></div>
+          </>
+        ))}
       </div>
     </div>
   );
