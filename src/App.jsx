@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className="navbar-overall-wrapper">
       <nav className="navbar">
         <h2 className="navbar-welcome-message">
-          Hi, I'm Denis, Welcome to my portfolio site! Enjoy!
+          Hi, I'm Denis, Welcome to my portfolio! Enjoy!
         </h2>
         {/*
         <div className="Logo">
@@ -69,6 +69,7 @@ const HeroSection = () => {
                 className="hero-section-ctas-download-my-cv-button"
                 href="../Files/DenisJoséMendozaVidalCV.pdf"
                 target="_Blank"
+                download="Denis-Mendoza-CV"
               >
                 <img src="../images/checkmark.png" alt="" />
                 Download My CV
@@ -80,23 +81,34 @@ const HeroSection = () => {
                 Find me on:
               </div>
               <div className="hero-section-ctas-find-me-on-options-wrapper">
-                <a href="">
+                <a
+                  href="https://api.whatsapp.com/send?phone=573044612480"
+                  target="_Blank"
+                >
                   <img src="../images/whatsapp-logo.png" alt="" /> Whatsapp
                 </a>
 
-                <a href="">
+                <a
+                  href="https://github.com/denisjosemendozavidal"
+                  target="_Blank"
+                >
                   <img src="../images/github-logo.png" alt="" />
                   GitHub
                 </a>
 
-                <a href="">
+                <a
+                  href="https://www.linkedin.com/in/denis-mendoza-a085b518b/"
+                  target="_Blank"
+                >
                   <img src="../images/linkedin-logo.png" alt="" /> Linkedin
                 </a>
               </div>
             </div>
             <div className="hero-section-ctas-email-me-title-checkmark-wrapper">
               <img src="../images/checkmark.png" alt="" />
-              <a href="">Email me at: Denismendozavidal@gmail.com</a>
+              <a href="mailto: denismendozavidal@gmail.com">
+                Email me at: Denismendozavidal@gmail.com
+              </a>
             </div>
           </div>
         </div>
@@ -504,45 +516,71 @@ const FinalCtaSection = () => {
   return (
     <div className="final-cta-section-wrapper">
       <div className="final-cta-section-title-wrapper">
-        <h3>Why Wait? Reach out!</h3>
+        <h2>Contact Me</h2>
       </div>
       <div className="final-cta-section-content-wrapper">
         <div className="final-cta-section-contact-list-wrapper">
-          <div className="final-cta-section-download-my-cv-wrapper">
+          <div className="final-cta-section-contact-item-wrapper">
             <a
-              className="final-cta-section-download-my-cv-button"
+              className="final-cta-section-contact-item-button-wrapper"
               href="../Files/DenisJoséMendozaVidalCV.pdf"
               target="_Blank"
+              download="Denis-Mendoza-CV"
             >
-              <img src="../images/checkmark.png" alt="" />
+              <img
+                className="final-cta-section-contact-item-checkmark"
+                src="../images/checkmark.png"
+                alt=""
+              />
               Download My CV
             </a>
           </div>
-          <div className="final-cta-section-find-me-on-wrapper">
+          <div className="final-cta-section-contact-item-wrapper">
             <div className="final-cta-section-find-me-on-title-checkmark">
-              <img src="../images/checkmark.png" alt="" />
+              <img
+                className="final-cta-section-contact-item-checkmark"
+                src="../images/checkmark.png"
+                alt=""
+              />
               Find me on:
             </div>
             <div className="final-cta-section-find-me-on-options-wrapper">
-              <a href="">
-                <img src="../images/whatsapp-logo.png" alt="" /> Whatsapp
+              <a
+                href="https://api.whatsapp.com/send?phone=573044612480"
+                target="_Blank"
+              >
+                Whatsapp <img src="../images/whatsapp-logo.png" alt="" />
               </a>
 
-              <a href="">
-                <img src="../images/github-logo.png" alt="" />
+              <a
+                href="https://github.com/denisjosemendozavidal"
+                target="_Blank"
+              >
                 GitHub
+                <img src="../images/github-logo.png" alt="" />
               </a>
 
-              <a href="">
-                <img src="../images/linkedin-logo.png" alt="" /> Linkedin
+              <a
+                href="https://www.linkedin.com/in/denis-mendoza-a085b518b/"
+                target="_Blank"
+              >
+                Linkedin
+                <img src="../images/linkedin-logo.png" alt="" />
               </a>
             </div>
           </div>
-          <div className="final-cta-section-email-me-at-wrapper">
-            <div className="final-cta-section-email-me-at-title-checkmark-wrapper">
-              <img src="../images/checkmark.png" alt="" />
-              <a href="">Email me at: Denismendozavidal@gmail.com</a>
-            </div>
+          <div className="final-cta-section-contact-item-wrapper">
+            <a
+              className="final-cta-section-contact-item-button-wrapper"
+              href="mailto: denismendozavidal@gmail.com"
+            >
+              <img
+                className="final-cta-section-contact-item-checkmark"
+                src="../images/checkmark.png"
+                alt=""
+              />
+              Email me at: Denismendozavidal@gmail.com
+            </a>
           </div>
         </div>
       </div>

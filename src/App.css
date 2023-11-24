@@ -489,3 +489,85 @@ Styling notes for Denis:
 }
 
 /*Styling for Skills End here*/
+
+/*Styling for Final CTA / Contact me section start here*/
+
+.final-cta-section-wrapper {
+  width: 100%;
+  max-width: 1181px;
+  color: white;
+  display: flex;
+  margin-top: 5%;
+}
+
+.final-cta-section-title-wrapper {
+  width: 20%;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.final-cta-section-title-wrapper {
+  font-weight: normal;
+  color: transparent;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white;
+}
+
+.final-cta-section-contact-list-wrapper {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.final-cta-section-contact-item-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.final-cta-section-contact-item-button-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 10px;
+  font-size: x-large;
+}
+
+.final-cta-section-contact-item-checkmark {
+  width: 50px;
+  height: auto;
+}
+
+.final-cta-section-find-me-on-title-checkmark {
+  display: flex;
+  gap: 10px;
+  font-size: x-large;
+  align-items: center;
+  color: white;
+  width: fit-content;
+}
+
+.final-cta-section-find-me-on-options-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.final-cta-section-find-me-on-options-wrapper a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  text-decoration: underline;
+  font-size: x-large;
+}
+
+.final-cta-section-find-me-on-options-wrapper a img {
+  width: 50px;
+  height: auto;
+}
+
+/*Styling for Final CTA / Contact me section ends here*/
