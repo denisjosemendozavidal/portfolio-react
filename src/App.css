@@ -659,7 +659,8 @@ Styling notes for Denis:
 
   /*Styling for Final CTA / Contact me section starts here*/
   .final-cta-section-wrapper {
-    padding: 5%;
+    padding: 10%;
+    flex-wrap: wrap;
   }
 
   /*Styling for Final CTA / Contact me section starts here*/
@@ -877,7 +878,6 @@ Styling notes for Denis:
   }
 
   .final-cta-section-find-me-on-mobile-wrapper {
-    border: purple solid;
     flex-direction: column;
   }
 
