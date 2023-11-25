@@ -199,6 +199,7 @@ Styling notes for Denis:
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .aboutMe-projects-workexperience-skills-finalCtaSection-buttons-wrapper {
