@@ -1,10 +1,3 @@
-/*
-Styling notes for Denis: 
-1. Navbar Menu options, need to make them visible
-2. Reach out options need to make them visible
-
-*/
-
 /* Styling for Navbar Begins here */
 
 /*Styling for navbar as a whole start here*/
@@ -568,12 +561,14 @@ Styling notes for Denis:
 
   .hero-section {
     display: flex;
-    height: 700px;
+    height: 600px;
   }
 
   .hero-section-left-side-wrapper {
     width: 70%;
     justify-content: center;
+    align-items: flex-start;
+    border: blue solid;
   }
 
   .hero-section-text-header-wrapper h1 {
@@ -642,8 +637,8 @@ Styling notes for Denis:
   }
 
   .hero-section-img {
-    height: 710px;
-    width: 710px;
+    height: 610px;
+    width: 610px;
     object-fit: cover;
   }
 
@@ -652,7 +647,7 @@ Styling notes for Denis:
   /*Styling for the Overall wrapper starts here*/
 
   .aboutMe-projects-workexperience-skills-finalCtaSection-wrapper {
-    margin-top: 700px;
+    margin-top: 550px;
   }
 
   /*Styling for the Overall wrapper ends here*/
