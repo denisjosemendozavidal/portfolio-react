@@ -44,13 +44,13 @@ const HeroSection = () => {
                 target="_Blank"
                 download="Denis-Mendoza-CV"
               >
-                <img src="../images/checkmark.png" alt="" />
+                <img src="../images/checkmark.png" alt="green-checkmark" />
                 Download My CV
               </a>
             </div>
             <div className="hero-section-ctas-find-me-on-wrapper">
               <div className="hero-section-ctas-find-me-on-title-checkmark">
-                <img src="../images/checkmark.png" alt="" />
+                <img src="../images/checkmark.png" alt="green-checkmark" />
                 Find me on:
               </div>
               <div className="hero-section-ctas-find-me-on-options-wrapper">
@@ -58,14 +58,15 @@ const HeroSection = () => {
                   href="https://api.whatsapp.com/send?phone=573044612480"
                   target="_Blank"
                 >
-                  <img src="../images/whatsapp-logo.png" alt="" /> Whatsapp
+                  <img src="../images/whatsapp-logo.png" alt="whatsapp-logo" />{" "}
+                  Whatsapp
                 </a>
 
                 <a
                   href="https://github.com/denisjosemendozavidal"
                   target="_Blank"
                 >
-                  <img src="../images/github-logo.png" alt="" />
+                  <img src="../images/github-logo.png" alt="github-logo" />
                   GitHub
                 </a>
 
@@ -73,12 +74,13 @@ const HeroSection = () => {
                   href="https://www.linkedin.com/in/denis-mendoza-a085b518b/"
                   target="_Blank"
                 >
-                  <img src="../images/linkedin-logo.png" alt="" /> Linkedin
+                  <img src="../images/linkedin-logo.png" alt="linkedin-logo" />{" "}
+                  Linkedin
                 </a>
               </div>
             </div>
             <div className="hero-section-ctas-email-me-title-checkmark-wrapper">
-              <img src="../images/checkmark.png" alt="" />
+              <img src="../images/checkmark.png" alt="green-checkmark" />
               <a href="mailto: denismendozavidal@gmail.com">
                 Email me at: Denismendozavidal@gmail.com
               </a>
@@ -90,7 +92,7 @@ const HeroSection = () => {
         <img
           className="hero-section-img"
           src="../images/SelfieBlackAndWhite.jpeg"
-          alt=""
+          alt="selfie-denis-mendoza"
         />
       </div>
     </div>
@@ -502,7 +504,7 @@ const FinalCtaSection = () => {
               <img
                 className="final-cta-section-contact-item-checkmark"
                 src="../images/checkmark.png"
-                alt=""
+                alt="green-checkmark"
               />
               Download My CV
             </a>
@@ -512,7 +514,7 @@ const FinalCtaSection = () => {
               <img
                 className="final-cta-section-contact-item-checkmark"
                 src="../images/checkmark.png"
-                alt=""
+                alt="green-checkmark"
               />
               Find me on:
             </div>
@@ -521,7 +523,8 @@ const FinalCtaSection = () => {
                 href="https://api.whatsapp.com/send?phone=573044612480"
                 target="_Blank"
               >
-                Whatsapp <img src="../images/whatsapp-logo.png" alt="" />
+                Whatsapp{" "}
+                <img src="../images/whatsapp-logo.png" alt="whatsapp-logo" />
               </a>
 
               <a
@@ -529,7 +532,7 @@ const FinalCtaSection = () => {
                 target="_Blank"
               >
                 GitHub
-                <img src="../images/github-logo.png" alt="" />
+                <img src="../images/github-logo.png" alt="github-logo" />
               </a>
 
               <a
@@ -537,7 +540,7 @@ const FinalCtaSection = () => {
                 target="_Blank"
               >
                 Linkedin
-                <img src="../images/linkedin-logo.png" alt="" />
+                <img src="../images/linkedin-logo.png" alt="linkedin-logo" />
               </a>
             </div>
           </div>
@@ -549,7 +552,7 @@ const FinalCtaSection = () => {
               <img
                 className="final-cta-section-contact-item-checkmark"
                 src="../images/checkmark.png"
-                alt=""
+                alt="green-checkmark"
               />
               Email me at: Denismendozavidal@gmail.com
             </a>
