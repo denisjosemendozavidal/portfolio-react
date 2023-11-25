@@ -546,7 +546,7 @@ const FinalCtaSection = () => {
           </div>
           <div className="final-cta-section-contact-item-wrapper">
             <a
-              className="final-cta-section-contact-item-button-wrapper"
+              className="final-cta-section-contact-item-button-wrapper final-cta-section-email-me--button-wrapper"
               href="mailto: denismendozavidal@gmail.com"
             >
               <img

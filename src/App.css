@@ -867,6 +867,10 @@
     text-align: left;
   }
 
+  .work-experience-section-specific-job-accordion-symbol {
+    display: none;
+  }
+
   /*Styling for the Work Experience section ends here*/
 
   /*Styling for Skills Start here*/
@@ -893,10 +897,16 @@
   .final-cta-section-wrapper {
     flex-direction: column;
     gap: 30px;
+    padding: 5%;
+    flex-wrap: wrap;
   }
 
   .final-cta-section-title-wrapper {
     width: 100%;
+  }
+
+  .final-cta-section-email-me--button-wrapper {
+    flex-wrap: wrap;
   }
 
   .final-cta-section-find-me-on-mobile-wrapper {
