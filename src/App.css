@@ -712,7 +712,7 @@
   /*Styling for Hero section starts here*/
 
   .hero-section {
-    height: 850px;
+    height: 550px;
   }
 
   .hero-section-left-side-wrapper {
@@ -733,17 +733,17 @@
 
   .hero-section-text-header-wrapper h1 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
   }
 
   .hero-section-text-subheader h2 {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
   }
 
   .hero-section-ctas-wrapper {
-    gap: 30px;
+    gap: 10px;
   }
 
   .hero-section-ctas-download-my-cv-wrapper a {
@@ -803,7 +803,7 @@
   /*Styling for the overall wrapper starts here*/
 
   .aboutMe-projects-workexperience-skills-finalCtaSection-wrapper {
-    margin-top: 870px;
+    margin-top: 560px;
     flex-wrap: nowrap;
   }
 
