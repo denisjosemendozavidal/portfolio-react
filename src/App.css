@@ -568,7 +568,6 @@
     width: 70%;
     justify-content: center;
     align-items: flex-start;
-    border: blue solid;
   }
 
   .hero-section-text-header-wrapper h1 {
@@ -647,7 +646,7 @@
   /*Styling for the Overall wrapper starts here*/
 
   .aboutMe-projects-workexperience-skills-finalCtaSection-wrapper {
-    margin-top: 550px;
+    margin-top: 530px;
   }
 
   /*Styling for the Overall wrapper ends here*/
