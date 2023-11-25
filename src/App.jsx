@@ -163,21 +163,19 @@ const WorkExperience = () => {
       jobTitle: "Project Manager / Product Owner / Tech Lead",
       duration: "February 2023 to Present",
       typeOfJob: "Remote",
-      jobDescription: `At WebRun, a Webflow development agency, I wear many hats, from
-      Project Manager and Product Owner to Tech Lead. My day-to-day
-      involves spinning the gears behind stunning, high-converting
-      websites and landing pages. It all starts with deep-diving into
-      our clients' worlds, understanding their industry, ambitions, and
-      brand soul. Then, like a conductor, I translate these insights
-      into vibrant, actionable plans for our design team, ensuring we
-      not only grasp but magnificently bring to life each project's
-      vision. While I may not be hands-on with code every day, my
-      expertise stretches from overseeing flawless design integration in
-      Webflow to occasionally weaving my magic in Next.js. Using a
-      toolkit brimming with custom JavaScript, Airtable, Customer.io,
-      and Make.com, I craft digital experiences that captivate and
-      convert, turning our clients’ dreams into impressive digital
-      landmarks.`,
+      jobDescription: `At WebRun, a Webflow development agency, 
+      I serve multiple roles, including Project Manager, Product Owner, 
+      and Tech Lead. My daily tasks revolve around driving the development 
+      of stunning, high-converting websites and landing pages. This process 
+      begins with a thorough understanding of our clients' industries, 
+      ambitions, and brand identities. Acting like a conductor, I transform 
+      these insights into vibrant, actionable plans for our design team. 
+      Our goal is to not just understand but also to vividly realize each 
+      project's vision. My expertise encompasses overseeing seamless design 
+      integration in Webflow and occasionally employing my skills in Next.js. 
+      Leveraging a comprehensive toolkit, I specialize in crafting digital 
+      experiences that captivate and convert, transforming our clients' 
+      visions into impressive digital landmarks`,
     },
     {
       company: "Loadsmart",
