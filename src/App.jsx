@@ -126,7 +126,7 @@ const AboutMe = () => {
         {" "}
         <video
           poster="../images/Thumbnail.jpeg"
-          src="/images/Video/Introduction.mp4"
+          src="/images/Video/Introduction-denisMendoza.mp4"
           controls
         ></video>
       </div>
